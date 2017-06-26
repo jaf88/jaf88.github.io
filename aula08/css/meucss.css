@@ -50,7 +50,7 @@ th {
   background-color: #b2beff;
 }
 
-td:hover {
+tr:hover {
   background-color: red;
 }
 
