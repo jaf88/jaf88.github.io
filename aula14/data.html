@@ -7,18 +7,22 @@
   <body>
     <ul>
       <li class="pessoa" onclick="mostravalor(this)" data-idade="20"
-        altura="1.80">João</li>
+        altura="1.80" nome="João">João</li>
       <li class="pessoa" onclick="mostravalor(this)" data-idade="30"
-        altura="1.90">José</li>
+        altura="1.90" nome="José">José</li>
       <li class="pessoa" onclick="mostravalor(this)" data-idade="40"
-        altura="1.60">Maria</li>
+        altura="1.60" nome="Maria">Maria</li>
 
       <script type="text/javascript">
           function mostravalor(componente) {
             var valor = componente.getAttribute('data-idade');
-            alert(valor);
+            var nome = componente.getAttribute('nome');
+            alert("Nome: "+nome+" -- "+"Idade: "+valor);
           }
       </script>
     </ul>
+
+    <h2> <a href="desafio.html"> Desafio - Aula 14 </a></h2>
+
   </body>
 </html>
