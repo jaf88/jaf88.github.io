@@ -6,9 +6,19 @@
   </head>
   <body>
     <ul>
-      <li class="pessoa" data-idade="20">João</li>
-      <li class="pessoa" data-idade="30">José</li>
-      <li class="pessoa" data-idade="40">Maria</li>
+      <li class="pessoa" onclick="mostravalor(this)" data-idade="20"
+        altura="1.80">João</li>
+      <li class="pessoa" onclick="mostravalor(this)" data-idade="30"
+        altura="1.90">José</li>
+      <li class="pessoa" onclick="mostravalor(this)" data-idade="40"
+        altura="1.60">Maria</li>
+
+      <script type="text/javascript">
+          function mostravalor(componente) {
+            var valor = componente.getAttribute('data-idade');
+            alert(valor);
+          }
+      </script>
     </ul>
   </body>
 </html>
