@@ -8,3 +8,21 @@
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
 }
+
+.comboxsizing {
+  background: blue;
+  border: 15px;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box
+}
+
+.semboxsizing {
+  background: green;
+  border: 15px;
+  padding: 20px;
+  width: 300px;
+}
