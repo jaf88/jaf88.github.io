@@ -1,0 +1,33 @@
+.box {
+  background: #FF69B4;
+  width: 40%;
+  height: 140px;
+  padding: 20px;
+  margin: 45px;
+  border-radius: 10px 40px;
+  float: left;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+.sombra {
+    background: rgb(255, 255, 255);
+}
+p {
+    text-align: center;
+    color: white;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: white;
+}
+
+.box2 {
+  background: #F0E68C;
+  width: 40%;
+  height: 140px;
+  padding: 20px;
+  margin: 45px;
+  border-radius: 10px 40px;
+  float: left;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
