@@ -1,0 +1,85 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f3f3f3;
+}
+
+#navegacao {
+	background: #fff;
+
+}
+
+#area {
+	
+}
+
+#area-principal {
+
+}
+
+#logo {
+	
+}
+
+#menu {
+	
+}
+
+#postagem {
+	
+	
+}
+
+h2 {
+	
+}
+
+/****************************************************
+***********************Formatação do menu************/
+a {
+	
+}
+/*Links não visitados*/
+a:link {
+
+}
+
+/*Links vistados*/
+a:visited {
+	
+}
+
+/*Links hover*/
+a:hover {
+	
+}
+
+/*Links active*/
+a:active {
+	
+}
+
+
+/*Classes*/
+.verde {
+
+}
+
+.data-postagem {
+	
+	
+}
+
+.img-postagem{
+	
+}
+
+.postado {
+	
+	
+}
