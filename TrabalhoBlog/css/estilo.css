@@ -2,6 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 
 body {
@@ -9,13 +10,18 @@ body {
 	background: #f3f3f3;
 }
 
-#navegacao {
+nav {
 	background: #fff;
+	width: 100%;
+	text-align: right;
+}
 
+nav strong{
+	align-items: left;
 }
 
 #area {
-	
+
 }
 
 #area-principal {
@@ -23,26 +29,26 @@ body {
 }
 
 #logo {
-	
+
 }
 
 #menu {
-	
+
 }
 
 #postagem {
-	
-	
+
+
 }
 
 h2 {
-	
+
 }
 
 /****************************************************
 ***********************Formatação do menu************/
 a {
-	
+
 }
 /*Links não visitados*/
 a:link {
@@ -51,35 +57,36 @@ a:link {
 
 /*Links vistados*/
 a:visited {
-	
+
 }
 
 /*Links hover*/
 a:hover {
-	
+
 }
 
 /*Links active*/
 a:active {
-	
+
 }
 
 
 /*Classes*/
 .verde {
-
+	color: #ADFF2F;
+	text-align: left;
 }
 
 .data-postagem {
-	
-	
+
+
 }
 
 .img-postagem{
-	
+
 }
 
 .postado {
-	
-	
+
+
 }
