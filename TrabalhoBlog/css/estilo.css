@@ -18,6 +18,7 @@ nav {
 	background: #fff;
 	width: 95%;
 	text-align: right;
+	font-size: 25px;
 	display: inline-block;
 }
 
@@ -68,16 +69,21 @@ article {
 
 h2 {
   text-shadow: 2px 2px gray;
+	font-size: 30px;
 	margin-top: 10px;
 	margin-left: 25px;
 	color: #9ACD32;
+}
+
+header hr{
+	width: 100%;
+	margin-left: 0px;
 }
 
 hr{
 	width: 97.5%;
 	margin-top: 15px;
 	margin-left: 15px;
-
 }
 
 /****************************************************
@@ -97,14 +103,14 @@ a:visited {
 
 /*Links hover*/
 a:hover {
-
+	background: #9ACD32;
+	color: white;
 }
 
 /*Links active*/
 a:active {
-
+	color: #FF1493;
 }
-
 
 /*Classes*/
 .verde {
@@ -113,8 +119,7 @@ a:active {
 }
 
 .data-postagem {
-	margin-left: 15px;
-
+	margin-left: 30px;
 }
 
 .img-postagem{
@@ -126,6 +131,5 @@ a:active {
 }
 
 .postado {
-	margin-left: 35px;
-	margin-bottom: 30px;
+	margin-left: 45px;
 }
