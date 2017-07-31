@@ -33,21 +33,21 @@ p{
 }
 
 #logo {
-	margin-right: 15px;
+	margin-top: -10px;
 	margin-left: 15px;
+	font-size: 28px;
 	float: left;
-	display: inline-block;
 }
 
 section{
-	background: #D3D3D3;
-	border-top: 90px;
+	background: #f3f3f3; /*#D3D3D3;*/
+	width: 100%;
 }
 
 article {
 	margin-top: 15px;
-	width: 98%;
-	margin-left: 5px;
+	width: 95%;
+	margin-left: 15px;
   font-size: 15px;
   text-align: justify;
   display: inline-block;
@@ -68,7 +68,7 @@ h2 {
 }
 
 header hr{
-	width: 100%;
+	width: 99.8%;
 	margin-left: 0px;
 }
 
@@ -85,7 +85,7 @@ a {
 }
 /*Links não visitados*/
 a:link {
-
+	color: blue;
 }
 
 /*Links vistados*/
@@ -107,7 +107,6 @@ a:active {
 /*Classes*/
 .verde {
 	color: #9ACD32;
-	text-align: left;
 }
 
 .data-postagem {
