@@ -1,3 +1,4 @@
+
 .box {
   position: relative;
   left: 10px;
@@ -5,8 +6,71 @@
   width: 50px;
   height: 50px;
   background: red;
+  animation: minhaAnimacao 5s 3s 3 alternate;
+  /*animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate; */
 }
 
 .box:hover {
   border: solid 5px black;
+  transition: border 3s 2s;
+}
+
+@keyframes minhaAnimacao {
+  from {
+    left: 10px;
+  }
+
+  to{
+    left: 50px;
+    background: blue;
+    border-radius: 100px;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+}
+
+div {
+  margin-top: 20%;
+  margin-left: 50%;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: desafioAnimacao 10s infinite;
+}
+@keyframes desafioAnimacao {
+  0% {
+    transform: rotate(0deg);
+    background: green;
+  }
+  50% {
+    transform: rotate(90deg);
+    background: gray;
+  }
+  100% {
+    transform: rotate(180deg);
+    background: yellow;
+  }
+
+  0% {
+    transform: rotate(0deg);
+    background: red;
+  }
+  50% {
+    transform: rotate(90deg);
+    background: blue;
+  }
+  100% {
+    transform: rotate(180deg);
+    background: black;
+  }
+  /*0%   {top: 0px; left: 0px; background: green;}
+  25%  {top: 0px; left: 100px; background: gray;}
+  50%  {top: 100px; left: 100px; background: blue;}
+  75%  {top: 100px; left: 0px; background: red;}
+  100% {top: 0px; left: 0px; background: yellow;} */
 }
