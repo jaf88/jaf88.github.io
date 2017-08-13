@@ -1,0 +1,23 @@
+body {
+  background:green;
+}
+
+.imgteste {
+  border-color: red;
+  border-width: 20px;
+}
+
+.conteudo {
+  background: #DCDCDC;
+  /*border: 2px solid blue;*/
+}
+
+.linha {
+  border-top:  6px solid blue;
+  border-radius: 10px;
+}
+
+.coluna {
+  background: white;
+  /*border: 2px solid black;*/
+}
