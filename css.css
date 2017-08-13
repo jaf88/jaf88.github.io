@@ -1,6 +1,6 @@
 
 body{
-  background-image: url("fundo.png");
+  /*background-image: url("fundo.png"); */
   background-position: center;
   background-size: contain;
 }
@@ -17,12 +17,12 @@ nav{
   text-align: center;
   float: center;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 nav a{
-  color: white;
+  color: black;
 }
 
 
