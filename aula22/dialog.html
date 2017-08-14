@@ -3,38 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap Dialog </title>
-  </head>
 
-  <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/css.css">
+    <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
   <body>
 
     <div class="container">
 
-      <div class="modal" id="janela">
+      <button type="button" class="btn btn-info"
+        data-toggle="modal" data-target="#janela">
+        Logar
+      </button>
+
+      <form class="modal" id="janela">
 
         <div class="modal-dialog">
 
           <div class="modal-content">
 
             <div class="modal-header">
-              Cabeçalho
+              <button type="button" class="close" data-dismiss="modal"
+              name="button"> <span>&times;</span> </button>
+
+              <h4 class="modal-title">Efetuar login</h4>
+
             </div>
 
             <div class="modal-body">
-              Corpo
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Digite seu email" class="form-control" id="email">
+              </div>
+
+              <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" placeholder="Digite seu senha" class="form-control" id="senha">
+              </div>
+
             </div>
 
             <div class="modal-footer">
-              Rodapé
+
+              <button type="button" class="btn btn-default"
+                data-dismiss="modal" name="button">
+                Cancelar
+              </button>
+
+              <button type="submit" class="btn btn-primary" name="button">
+                Entrar
+              </button>
+
             </div>
 
           </div>
 
         </div>
 
-      </div>
+      </form>
 
     </div>
 
