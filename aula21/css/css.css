@@ -1,10 +1,7 @@
-body {
-  background:green;
-}
-
-.imgteste {
-  border-color: red;
-  border-width: 20px;
+.imgcss {
+  border:4px solid #DCDCDC;
+  padding:4px;
+  border-width: 40%;
 }
 
 .conteudo {
@@ -13,11 +10,20 @@ body {
 }
 
 .linha {
-  border-top:  6px solid blue;
+  border-top:  6px solid #00BFFF;
   border-radius: 10px;
 }
 
 .coluna {
   background: white;
   /*border: 2px solid black;*/
+}
+
+.cor{
+  color: #00BFFF;
+  text-align: right;
+}
+
+.botao{
+  width: 90%;
 }
