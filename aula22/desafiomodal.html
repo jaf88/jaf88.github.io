@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafio Modal </title>
+
+    <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../aula18/bootstrap/css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../aula18/css/normalize.css">
+
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css.css">
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <br>
+      <button type="button" class="btn btn-info"
+        data-toggle="modal" data-target="#janela">
+        Logar
+      </button>
+
+      <form class="modal" id="janela">
+
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"
+                name="button"> <span>&times;</span> </button>
+
+              <h4 align="center" class="modal-title">
+                Sign in to start your session</h4>
+
+            </div>
+
+            <div class="modal-body">
+
+              <div class="has-feedback">
+                  <input type="text" class="form-control"
+                    id="email" placeholder="Email" />
+                  <i class="glyphicon glyphicon-envelope form-control-feedback"></i>
+              </div>
+              <br>
+              <div class="has-feedback">
+                  <input type="text" class="form-control"
+                  id="senha" placeholder="Password" />
+                  <i class="glyphicon glyphicon-lock form-control-feedback"></i>
+              </div>
+
+              <div class="has-feedback">
+
+                <div class="checkbox">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label><input class="tamanho-checkbox" type="checkbox">
+                        <div class="remember">RememberMe</div></label>
+                    </div>
+                    <div align="right" class="col-sm-6">
+                      <button type="button" class="btn btn-primary"
+                        name="button">Sign in</button>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div style="text-align:center">-OR-</div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="modal-footer social-buttons">
+              <a class="btn btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Sign in with Facebook
+              </a>
+              <a class="btn btn-block btn-social btn-google">
+                <span class="fa fa-google"></span> Sign in with Google+
+              </a>
+
+              <h4 align="left" class="h3-desafio">
+                I forgot my password
+                <br>
+                Register a new membership
+              </h4>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../aula18/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,34 +1,51 @@
 
-body{
-  /*background-image: url("fundo.png"); */
-  background-position: center;
-  background-size: contain;
+
+html,h1,div,nav,li,a, center, footer,body {
+   background: url(fundo.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
-h1{
+h1, center{
   color: white;
 }
 
 a:hover{
-  color: green;
+  color: yellow;
+}
+a:active{
+  color: yellow;
 }
 
 nav{
   text-align: center;
   float: center;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 20px;
+  list-style-type: none;
 }
 
 nav a{
-  color: black;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: white;
 }
-
 
 footer{
 	text-align: center;
   color: white;
+}
+
+.sombra{
+  width:40%;
+	height:200px;
+	float:left;
+	background-color:green;
+  margin:25px 15px;
+	border-radius:5px;
 }
 
 /*

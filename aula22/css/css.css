@@ -34,3 +34,19 @@
 .navbar-custom .icon-bar {
     background-color:white;
 }
+
+/*Desafio Modal CSS*/
+
+ .tamanho-checkbox {
+   width: 25px;
+   height: 25px;
+ }
+
+ .remember {
+   margin-left: 20%;
+ }
+
+.h3-desafio{
+  color: #2e6da4;
+  float: left;
+}
