@@ -39,13 +39,15 @@ footer{
   color: white;
 }
 
-.sombra{
-  width:40%;
-	height:200px;
-	float:left;
-	background-color:green;
-  margin:25px 15px;
-	border-radius:5px;
+.box {
+  background: #b9c941;
+  width: 300px;
+  height: 140px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 
 /*
