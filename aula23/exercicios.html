@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicios</title>
+    <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1 align="center">Alerts</h1>
+        <div class="alert alert-success alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="Fechar">&times;</a>
+        <strong> Success!</strong> You should <a href="#" class="alert-link">
+          read this message</a>
+      </div>
+
+
+        <div class="alert alert-info alert-success alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="Fechar">&times;</a>
+            <strong> Success!</strong> Indicates a successusful or positive action.
+        </div>
+
+        <div class="alert alert-warning alert-success alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="Fechar">&times;</a>
+            <strong> Warning!</strong> Indicates a warning that might need attention.
+        </div>
+
+        <div class="alert alert-danger alert-success alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="Fechar">&times;</a>
+            <strong> Danger!</strong> Indicates a dangerous or potentially negative action.
+        </div>
+
+        <hr>
+          <h1 align="center"> Tooltip</h1>
+
+          <button type="button" class="btn btn-default" data-toggle="tooltip"
+            data-placement="right" title="Detalhes do item"> Dica
+          </button>
+          <h1> Exercicio Tooltip </h1>
+
+          <button type="button" class="btn btn-default glyphicon glyphicon-play"
+            data-toggle="tooltip" data-placement="top" title="Tocar"></button>
+          <button type="button" class="btn btn-default glyphicon glyphicon-pause"
+            data-toggle="tooltip" data-placement="top" title="Pausar"></button>
+          <button type="button" class="btn btn-default glyphicon glyphicon-stop"
+            data-toggle="tooltip" data-placement="top" title="Para"></button>
+
+          <h1 align="center"> Popover</h1>
+          <h3>Popover</h3>
+          <button type="button" class="bnt btn-lg btn-danger"
+            data-toggle="popover" title="Detalhes!!"
+            data-content="Breve detalhes aqui!" data-placement="right">
+            Detalhes
+          </button>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+    <script type="text/javascript">
+      $(function (){
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../aula18/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
