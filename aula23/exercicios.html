@@ -34,28 +34,38 @@
             <strong> Danger!</strong> Indicates a dangerous or potentially negative action.
         </div>
 
-        <hr>
-          <h1 align="center"> Tooltip</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1> Tooltip</h1>
 
-          <button type="button" class="btn btn-default" data-toggle="tooltip"
-            data-placement="right" title="Detalhes do item"> Dica
-          </button>
-          <h1> Exercicio Tooltip </h1>
+              <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="right" title="Detalhes do item"> Dica
+              </button>
+              <h3> Exercicio Tooltip </h3>
+              <button type="button" class="btn btn-default glyphicon glyphicon-play"
+                data-toggle="tooltip" data-placement="top" title="Tocar"></button>
+              <button type="button" class="btn btn-default glyphicon glyphicon-pause"
+                data-toggle="tooltip" data-placement="top" title="Pausar"></button>
+              <button type="button" class="btn btn-default glyphicon glyphicon-stop"
+                data-toggle="tooltip" data-placement="top" title="Para"></button>
+            </div>
 
-          <button type="button" class="btn btn-default glyphicon glyphicon-play"
-            data-toggle="tooltip" data-placement="top" title="Tocar"></button>
-          <button type="button" class="btn btn-default glyphicon glyphicon-pause"
-            data-toggle="tooltip" data-placement="top" title="Pausar"></button>
-          <button type="button" class="btn btn-default glyphicon glyphicon-stop"
-            data-toggle="tooltip" data-placement="top" title="Para"></button>
+            <div class="col-sm-6">
+              <h1 align="center"> Popover</h1>
+              <h3> Exercicio Popover</h3>
+              <button type="button" class="bnt btn-lg btn-danger fade in"
+                data-toggle="popover" title="Detalhes!!" data-trigger="focus"
+                data-content="Breve detalhes aqui!" data-placement="right">
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
 
-          <h1 align="center"> Popover</h1>
-          <h3>Popover</h3>
-          <button type="button" class="bnt btn-lg btn-danger"
-            data-toggle="popover" title="Detalhes!!"
-            data-content="Breve detalhes aqui!" data-placement="right">
-            Detalhes
-          </button>
+
+
 
     </div>
 
@@ -64,15 +74,9 @@
 
     <script type="text/javascript">
       $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-
-    <script type="text/javascript">
-      $(function (){
-        $('[data-toggle="tooltip"]').tooltip()
-        $('[data-toggle="popover"]').popover()
-      })
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      });
     </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
