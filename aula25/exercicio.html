@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teste Array</title>
+    <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <a href="javascript:teste()">Teste Array</a> <br>
+    </div>
+
+    <script type="text/javascript">
+    var lista1 = Array();
+
+    var lista2 = Array('Delphi', 'Pascal', 'C', 'C++', 'Prolog');
+
+    function teste() {
+
+      lista1[1] = 'PHP';
+      lista1[2] = 'Java';
+      lista1[3] = 'Python';
+      lista1[4] = 'Perl';
+
+      for (var i = 0; i < lista1.length; i++) {
+        document.write(lista[i]+'<br>');
+      }
+
+      for (var i = 0; i < lista2.length; i++) {
+        document.write(lista2[i]+'<br>');
+      }
+
+      document.write('<a href="javascript:posicao()")>Consultar</a><br>');
+
+    }
+
+    function posicao() {
+      var indice = prompt('Qual posição da lista1 deseja consultar?');
+      alert(lista1[indice]);
+    }
+    </script>
+
+    <script src="js/js.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../aula18/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teste Array</title>
+    <link href="../aula18/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <a href="javascript:teste()">Teste Array</a> <br>
+    </div>
+
+    <script type="text/javascript">
+    var lista1 = Array();
+
+    var lista2 = Array('Delphi', 'Pascal', 'C', 'C++', 'Prolog');
+
+    function teste() {
+
+      lista1[1] = 'PHP';
+      lista1[2] = 'Java';
+      lista1[3] = 'Python';
+      lista1[4] = 'Perl';
+
+      for (var i = 0; i < lista1.length; i++) {
+        document.write(lista[i]+'<br>');
+      }
+
+      for (var i = 0; i < lista2.length; i++) {
+        document.write(lista2[i]+'<br>');
+      }
+
+      document.write('<a href="javascript:posicao()")>Consultar</a><br>');
+
+    }
+
+    function posicao() {
+      var indice = prompt('Qual posição da lista1 deseja consultar?');
+      alert(lista1[indice]);
+    }
+    </script>
+
+    <script src="js/js.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../aula18/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
