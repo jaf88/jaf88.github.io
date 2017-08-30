@@ -9,26 +9,37 @@
   <body>
 
     <div class="container">
-      <a href="javascript:minhafuncao(25)">25</a> <br>
-      <a href="javascript:minhafuncao(36)">36</a> <br>
-      <a href="javascript:minhafuncao(49)">49</a> <br>
+      <h3>Raiz dos seguintes números!!</h3>
+      <a href="javascript:minhafuncaoraiz(25)">25</a> <br>
+      <a href="javascript:minhafuncaoraiz(36)">36</a> <br>
+      <a href="javascript:minhafuncaoraiz(49)">49</a> <br>
     </div>
 
-    <script type="text/javascript">
+    <div class="container">
+      <h3>Função que escrever de 1 a n!</h3>
+
+      <a href="javascript:escreverN()" class="btn btn-primary">
+          Clique</a> <br> <br>
+
+      <div id="uman">
+
+      </div>
+    </div>
+
+    <!--<script type="text/javascript">
       function minhafuncao(arg){
         var raiz = Math.sqrt(arg);
         msg = 'A raiz de '+arg+ ' é = ';
         alert(msg+raiz);
       };
-    </script>
-
-
-
-
+    </script> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../aula18/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+
+    </script>
   </body>
 </html>

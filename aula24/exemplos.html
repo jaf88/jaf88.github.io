@@ -11,10 +11,14 @@
     <div class="container">
       <a href="javascript:minhafuncao(100, 20)">Clique</a> <br>
 
-      <a href="javascript:escrever('<h1>Programação Web</h1>')">Escreve</a> <br>
+      <a href="javascript:  escrever('<h1>Programação Web</h1>')">Escreve</a> <br>
+
+      <div id="minhaDiv">
+
+      </div>
     </div>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function minhafuncao(arg1, arg2){
         var soma = arg1 + arg2;
         var msg = 'A soma é igual a ';
@@ -28,10 +32,23 @@
         }
       }
 
-      function escrever(arg){
+      /*function escrever(arg){
         document.write(arg);
       }
-    </script>
+
+      function escrever(arg){
+        document.getElementById("minhaDiv").innerHTML = arg;
+      }*/
+
+      function escrever(){
+        var texto = prompt("Digite um texto qualquer!");
+
+        document.getElementById("minhaDiv").innerHTML = texto;
+      }
+    </script> -->
+
+    <script src="js/js.js"></script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
