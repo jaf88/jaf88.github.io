@@ -41,7 +41,7 @@
             <button type="button" class="btn btn-primary
               glyphicon glyphicon-refresh"> Recarregar </button>
             <button type="button" class="btn btn-primary
-              glyphicon glyphicon-file"> Novo </button>fkgjksfgkj
+              glyphicon glyphicon-file"> Novo </button>
           </div>
           <br>
           <div class="row">
@@ -49,14 +49,14 @@
               Registro por página
               <div>
                 <select class="form-control"name='option'>
-                  <option value='10'> 10</option>
+                  <option value='10'>10</option>
                   <option value='9'>9</option>
                   <option value='8'>8</option>
                 </select>
               </div>
             </div>
             <div class="col-md-8">
-              <strong>Busca</strong>fkgjksfgkj
+              <strong>Busca</strong>
               <div class="form">
                 <input type="text" placeholder="Busca" class="form-control" id="busca">
               </div>
@@ -74,7 +74,7 @@
             <tr>
               <th>ID </th>
               <th>Descrição </th>
-              <th>Situação</th>fkgjksfgkj
+              <th>Situação</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -92,7 +92,7 @@
                   data-placement="top" title="Editar"></button>
                 <button type="button" class="btn btn-xs
                   glyphicon glyphicon-trash"  data-toggle="tooltip"
-                  data-pp="popover" data-content=""></button>
+                  data-pp="popover" data-content="" </button>
               </td>
             </tr>
 
@@ -182,11 +182,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script type="text/javascript">
+
+      var botoesConten = 
+      '<div class="btn-group"><button class="btn btn-primary glyphicon glyphicon-ok"> Sim</button><button class="btn btn-default glyphicon glyphicon-remove"> Não</button></div>';
       $(function () {
         $('[data-toggle="tooltip"]').tooltip({title: "Remover"});
         $('[data-pp="popover"]').popover({title: "Deseja realmente remover esse registro?",
-          content:"fkgjksfgkj",placement: "left"});
+          content:botoesConten, html: true, placement: "left"});
       });
+
     </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
