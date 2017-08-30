@@ -9,7 +9,9 @@
   <body>
 
     <div class="container">
-      <a href="javascript:minhafuncao(100, 20)">Clique</a>
+      <a href="javascript:minhafuncao(100, 20)">Clique</a> <br>
+
+      <a href="javascript:escrever('<h1>Programação Web</h1>')">Escreve</a> <br>
     </div>
 
     <script type="text/javascript">
@@ -24,6 +26,10 @@
         else {
           alert('Falso')
         }
+      }
+
+      function escrever(arg){
+        document.write(arg);
       }
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

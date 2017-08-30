@@ -9,14 +9,23 @@
   <body>
 
     <div class="container">
-      <a href="javascript:minhafuncao(100, 20)">Clique</a>
+      <a href="javascript:minhafuncao(25)">25</a> <br>
+      <a href="javascript:minhafuncao(36)">36</a> <br>
+      <a href="javascript:minhafuncao(49)">49</a> <br>
     </div>
 
     <script type="text/javascript">
-      function minhafuncao(arg1){
+      function minhafuncao(arg){
         var raiz = Math.sqrt(arg);
-      }
+        msg = 'A raiz de '+arg+ ' é = ';
+        alert(msg+raiz);
+      };
     </script>
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
