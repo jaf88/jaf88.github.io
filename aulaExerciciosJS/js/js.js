@@ -72,3 +72,27 @@ function questao4() {
   }
 
 }
+
+/*
+Faça um algoritmo que leia o nome e as três notas de uma disciplina de um aluno e ao
+final escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média
+para aprovação é igual ou superior a 8.
+*/
+function questao5() {
+  var nome_aluno = prompt("Informe o nome do Aluno!");
+  var nota1 = prompt("Informe a primeira Nota!");
+  var nota2 = prompt("Informe a segunda Nota!");
+  var nota3 = prompt("Informe a terceira Nota!");
+
+  nota1 = parseFloat(nota1);
+  nota2 = parseFloat(nota2);
+  nota3 = parseFloat(nota3);
+
+  var media = (nota1+nota2+nota3)/3;
+
+  if (media >= 8) {
+    alert("Aluno: "+(nome_aluno)+ " Média: "+(media)+ " Aprovado!");
+  } else {
+    alert("Aluno: "+(nome_aluno)+ " Média: "+(media)+ " Reprovado!");
+  }
+}
