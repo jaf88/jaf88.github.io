@@ -15,37 +15,32 @@
     </div>
 
     <script type="text/javascript">
-      var notas_aleatorias = Array();
+      var list_notas_generica = Array();
 
-      notas_aleatorias[1][1] = 1, 20;
-      notas_aleatorias[1][2] = 2, 30;
-      notas_aleatorias[3] = 3;
-      notas_aleatorias[4] = 4;
-      notas_aleatorias[5] = 5;
-      notas_aleatorias[6] = 6;
-      notas_aleatorias[7] = 7;
-      notas_aleatorias[8] = 8;
-      notas_aleatorias[9] = 9;
-      notas_aleatorias[10] = 10;
-
-
+      list_notas_generica['notas'] = Array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10');
+      list_notas_generica['faltas'] = Array('10','10','10','10','10','15','14','8','2','1');
 
       function exibe_nota() {
-        for (var i = 1; i < notas_aleatorias.length; i++) {
-         document.write(i+' - Nota:' +notas_aleatorias[i]+'<br>');
+        for (var i = 0; i < list_notas_generica['notas'].length; i++) {
+         document.write('Posição '+i+':'+' Nota: ' +list_notas_generica['notas'][i]+
+          '- Faltas: '+list_notas_generica['faltas'][i]+'<br>');
         }
+        document.write('<br>'+'<br>');
         document.write('<a href="javascript:consultar_nota()"> Consultar Nota</a>');
       }
 
       function consultar_nota() {
 
         var id = prompt('Qual posicao deseja consultar?');
-        var iff = parseInt(notas_aleatorias[id]);
+        var nota = parseInt(list_notas_generica['notas'][id]);
+        //alert('ID DD --> '+nota);
+        var falta = parseInt(list_notas_generica['faltas'][id]);
+        //alert('Faltas --> '+falta);
 
-        if (iff > 7.0) {
-          alert('Posição ' + id + ':' + 'Nota Aprovativa: '+notas_aleatorias[id]);
+        if (nota > 7.0 && falta <= 15 ) {
+          alert('Posição ' + id + ':' + 'Nota Aprovativa: '+nota+' Faltas: '+ falta);
         } else {
-          alert('Posição ' + id + ':' + 'Nota Reprovativa: '+notas_aleatorias[id]);
+          alert('Posição ' + id + ':' + 'Nota Reprovativa: '+nota+' Faltas: '+ falta);
         }
       }
     </script>
