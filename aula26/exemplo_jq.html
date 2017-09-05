@@ -9,29 +9,46 @@
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<link rel="stylesheet" href="css.css">
+
 		<script type="text/javascript">
 
 			function exibirOcultarTAG(tag,flag){
 				if(flag)
-					$(tag).show();
+					$(tag).show(1000);
 				else
-					$(tag).hide();
+					$(tag).hide(1000);
 			}
 
 
 			function exibirOcultarClasse(classe,flag){
 				if(flag)
-					$('.'+classe).show();
+					$('.'+classe).show(1000);
 				else
-					$('.'+classe).hide();
+					$('.'+classe).hide(1000);
 			}
 
 
 			function exibirOcultarID(id,flag){
 				if(flag)
-					$('#'+id).show();
+					$('#'+id).show(1000);
 				else
-					$('#'+id).hide();
+					$('#'+id).hide(1000);
+			}
+			function eventClick() {
+				$(document).ready(function() {
+						$('.caixa').click(function(){
+							alert('Evento Click');
+						});
+				});
+			}
+
+			function eventMouseOver() {
+				$(document).ready(function() {
+						$('.caixa2').mouseover(function(){
+							alert('Evento Mouse Over');
+						});
+				});
 			}
 		</script>
 
@@ -94,7 +111,28 @@
 				</div>
 
 			</div>
-
+			<hr> <hr> <br> <br>
+			<div class="row">
+				<div class="col-md-4">
+					<div id="quadro1" class="caixa pull-left"
+						onclick="eventClick()"><h4 style="color:green;">Evento Click</h4></div>
+					<div id="quadro2" class="caixa pull-left"
+						onclick="eventClick()"><h4 style="color:black;">Evento Click</h4></div>
+				</div>
+				<div class="col-md-4">
+					<div id="quadro1" class="caixa pull-left"
+						onclick="eventClick()"><h4 style="color:green;">Evento Dbclick</h4></div>
+					<div id="quadro2" class="caixa pull-left"
+						onclick="eventClick()"><h4 style="color:black;">Evento Dbclick</h4></div>
+				</div>
+				<div class="col-md-4">
+					<div id="quadro1" class="caixa2 pull-left"
+						onclick="eventMouseOver()"><h4 style="color:green;">Evento MouseOver</h4></div>
+					<div id="quadro2" class="caixa2 pull-left"
+						onclick="eventMouseOver()"><h4 style="color:black;">Evento MouseOver</h4></div>
+				</div>
+			</div>
+			</div>
 		</div>
 
     <script src="../js/jquery-3.2.1.min.js"></script>

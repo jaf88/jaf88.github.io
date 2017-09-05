@@ -1,0 +1,12 @@
+#quadro1 {
+  height: 100px;
+  width: 100px;
+  background: #000000;
+}
+
+#quadro2 {
+  height: 100px;
+  width: 100px;
+  background: #6495ED; 
+  margin-left:25px;
+}
