@@ -11,42 +11,32 @@
 
     <div class="container">
       <br> <br>
-      <a href="javascript:exibe_weekday()">Dias da Semana</a> <br>
+
+      <h1>Eventos</h1>
+      <br>
+      <button onclick="document.getElementById('demo').innerHTML = Date()">
+        Que horas são?</button>
+
+        <p id="demo"> </p>
+
+        <button> <a href="javascript:myFunction()"> Click Me</a></button>
+        <p id="dem"></p>
+
+        <br>
+        <h3>Evento com Span </h3>
+        <span onmouseover="mouseOverMe()">
+          <p id="haha">Mouse over me!</p></span>
     </div>
 
     <script type="text/javascript">
-
-      function exibe_weekday() {
-
-        var id = parseInt(prompt('Qual posicao deseja consultar?'));
-
-        switch (id) {
-          case 0:
-            alert("Domingo");
-            break;
-          case 1:
-            alert("Segunda");
-              break;
-          case 2:
-            alert("Terça");
-              break;
-          case 3:
-              alert("Quarta");
-              break;
-          case 4:
-              alert("Quinta");
-              break;
-          case 5:
-              alert("Sexta");
-              break;
-          case 6:
-              alert("Sabádo");
-              default:
-              break;
-
-        }
+      function myFunction() {
+        document.getElementById('dem').innerHTML = "Hello World";
       }
 
+      function mouseOverMe() {
+        //alert("fdskfjskldfjs");
+        document.getElementById('haha').innerHTML = "";
+      }
     </script>
 
 
