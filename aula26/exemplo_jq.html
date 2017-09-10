@@ -11,46 +11,9 @@
 
 		<link rel="stylesheet" href="css.css">
 
-		<script type="text/javascript">
+		<script src="../js/jquery-3.2.1.min.js"></script>
 
-			function exibirOcultarTAG(tag,flag){
-				if(flag)
-					$(tag).show(1000);
-				else
-					$(tag).hide(1000);
-			}
-
-
-			function exibirOcultarClasse(classe,flag){
-				if(flag)
-					$('.'+classe).show(1000);
-				else
-					$('.'+classe).hide(1000);
-			}
-
-
-			function exibirOcultarID(id,flag){
-				if(flag)
-					$('#'+id).show(1000);
-				else
-					$('#'+id).hide(1000);
-			}
-			function eventClick() {
-				$(document).ready(function() {
-						$('.caixa').click(function(){
-							alert('Evento Click');
-						});
-				});
-			}
-
-			function eventMouseOver() {
-				$(document).ready(function() {
-						$('.caixa2').mouseover(function(){
-							alert('Evento Mouse Over');
-						});
-				});
-			}
-		</script>
+		<script src="js.js"></script>
 
 	</head>
 
@@ -82,8 +45,10 @@
 				</div>
 
 				<div class="col-md-4">
-					<div style="height: 100px; width: 100px; background:#428bca;" class="caixa2 pull-left"></div>
-					<div style="height: 100px; width: 100px; background:#5cb85c; margin-left:15px" class="caixa2 pull-left"></div>
+					<div style="height: 100px; width: 100px; background:#428bca;"
+						class="caixa2 pull-left"></div>
+					<div style="height: 100px; width: 100px; background:#5cb85c;
+						margin-left:15px" class="caixa2 pull-left"></div>
 				</div>
 
 				<div class="col-md-4">
@@ -96,45 +61,54 @@
 
 			<div class="row">
 				<div class="col-md-4">
-					<button type="button" class="btn btn-danger"  onclick="exibirOcultarTAG('p',false)">Esconder parágrafos</button>
-					<button type="button" class="btn btn-success" onclick="exibirOcultarTAG('p',true)">Exibir parágrafos</button>
+					<button type="button" class="btn btn-danger"
+						onclick="exibirOcultarTAG('p',false)">Esconder parágrafos</button>
+					<button type="button" class="btn btn-success"
+						onclick="exibirOcultarTAG('p',true)">Exibir parágrafos</button>
 				</div>
 
 				<div class="col-md-4">
-					<button type="button" class="btn btn-danger"  onclick="exibirOcultarClasse('caixa2',false)">Esconder divs</button>
-					<button type="button" class="btn btn-success" onclick="exibirOcultarClasse('caixa2',true)">Exibir divs</button>
+					<button type="button" class="btn btn-danger"
+						onclick="exibirOcultarClasse('caixa2',false)">Esconder divs</button>
+					<button type="button" class="btn btn-success"
+						onclick="exibirOcultarClasse('caixa2',true)">Exibir divs</button>
 				</div>
 
 				<div class="col-md-4">
-					<button type="button" class="btn btn-danger"  onclick="exibirOcultarID('campo1',false)">Esconder inputs</button>
-					<button type="button" class="btn btn-success" onclick="exibirOcultarID('campo1',true)">Exibir inputs</button>
+					<button type="button" class="btn btn-danger"
+						onclick="exibirOcultarID('campo1',false)">Esconder inputs</button>
+					<button type="button" class="btn btn-success"
+						onclick="exibirOcultarID('campo1',true)">Exibir inputs</button>
 				</div>
 
 			</div>
 			<hr> <hr> <br> <br>
 			<div class="row">
 				<div class="col-md-4">
-					<div id="quadro1" class="caixa pull-left"
-						onclick="eventClick()"><h4 style="color:green;">Evento Click</h4></div>
-					<div id="quadro2" class="caixa pull-left"
-						onclick="eventClick()"><h4 style="color:black;">Evento Click</h4></div>
+					<div id="quadro1" class="caixaevc pull-left">
+						<h4 style="color:green;">Evento Click</h4>
+					</div>
+					<div id="quadro2" class="caixaevc pull-left">
+						<h4 style="color:black;">Evento Click</h4>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<div id="quadro1" class="caixa pull-left"
-						onclick="eventClick()"><h4 style="color:green;">Evento Dbclick</h4></div>
-					<div id="quadro2" class="caixa pull-left"
-						onclick="eventClick()"><h4 style="color:black;">Evento Dbclick</h4></div>
+					<div id="quadro1" class="caixadb pull-left">
+						<h4 style="color:green;">Evento Dbclick</h4>
+					</div>
+					<div id="quadro2" class="caixadb pull-left">
+						<h4 style="color:black;">Evento Dbclick</h4>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<div id="quadro1" class="caixa2 pull-left"
-						><h4 style="color:green;">Evento MouseOver</h4></div>
-					<div id="quadro2" class="caixa2 pull-left"
-						><h4 style="color:black;">Evento MouseOver</h4></div>
+					<div id="quadro1" class="caixamo pull-left">
+						<h4 style="color:green;">Evento MouseOver</h4></div>
+					<div id="quadro2" class="caixamo pull-left">
+						<h4 style="color:black;">Evento MouseOver</h4></div>
 				</div>
 			</div>
 			</div>
 		</div>
 
-    <script src="../js/jquery-3.2.1.min.js"></script>
 	</body>
 </html>
