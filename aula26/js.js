@@ -57,6 +57,13 @@ $(document).ready(function(){
   });
 
   $(".combo_site").change(function(){
-    alert('O Elemento foi modificado: Pesquisar cidades do '+$(this).val());
+    if($(this).val() == 'go'){
+      window.open('https://www.google.com.br', '_blank');
+    } else if($(this).val() == 'ya'){
+      window.open('https://yahoo.com', '_blank');
+    } else {
+      window.open('https://msn.com', '_blank');
+    }
+
   });
 });
