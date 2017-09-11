@@ -1,4 +1,6 @@
 
+var rodada = 1;
+
 $(document).ready(function() {
 
   $('#btn_iniciar_jogo').click(function () {
@@ -25,6 +27,22 @@ $(document).ready(function() {
   });
 
   $('.jogada').click(function(){
-    alert("jogada capturada");
+    var id_campo_clicado = this.id;
+    //alert("jogada capturada: "+id_campo_clicado);
+    jogada(id_campo_clicado);
   })
 });
+
+function jogada(id) {
+  var icone = '';
+  if ((rodada % 2) == 1) {
+    icone = 'url(imagens/marcacao_1.png)';
+    //alert("Jogada do jogador 01");
+  }
+  else {
+    icone = 'url(imagens/marcacao_2.png)';
+//    alert("Jogada do jogador 02");
+  }
+  rodada++;
+  $('#'+id).css('background-image', icone);
+}
