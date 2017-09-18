@@ -115,7 +115,24 @@ function verifica_ganhador() {
 
     mostra_ganhador(pontos);
   }
-  // verifica na diagonal: Essa parte é com vocês, boa sorte
+   // verifica na diagonal: Essa parte é com vocês, boa sorte
+   for (var j = 1; j <= 3; j++) {
+     pontos = 0;
+     pontos += matriz_jogo['a'][1];
+     pontos += matriz_jogo['b'][2];
+     pontos += matriz_jogo['c'][3];
+
+     mostra_ganhador(pontos);
+   }
+
+   for (var j = 1; j <= 3; j++) {
+     pontos = 0;
+     pontos += matriz_jogo['a'][3];
+     pontos += matriz_jogo['b'][2];
+     pontos += matriz_jogo['c'][1];
+
+     mostra_ganhador(pontos);
+   }
 }
 
 function mostra_ganhador(pontos) {
