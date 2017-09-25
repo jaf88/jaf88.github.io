@@ -1,7 +1,9 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: 16px;
   border-radius: 0;
+  margin-bottom: 20px;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -16,9 +18,9 @@
 
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #555;
+  background-color: black;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -28,4 +30,24 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;}
+}
+
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tamanho-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.remember {
+  margin-left: 20%;
+}
+
+.h3-desafio{
+  color: #2e6da4;
+  float: left;
 }
