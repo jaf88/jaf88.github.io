@@ -61,19 +61,18 @@
               glyphicon-education" data-toggle="collapse" data-target="#demo"> Cadastro Geral</button>
             <button type="button" class="btn btn-default glyphicon
               glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio"> Relatórios Gerais</button>
-            <button type="button" class="btn btn-default
-              glyphicon glyphicon-search"> Consultar Dados </button>
-            <button type="button" class="btn btn-default
-              glyphicon glyphicon-user"> Administração </button>
-            <button type="button" class="btn btn-default
-            glyphicon glyphicon-cog"> Configurações gerais Sistema </button>
+            <button type="button" class="btn btn-default glyphicon
+              glyphicon-search" data-toggle="collapse" data-target="#pesquisa"> Consultar Dados </button>
+            <a href="administracao.html" class="btn btn-default glyphicon glyphicon-user"> Administração</a>
+            <a href="conf_geral.html" class="btn btn-default glyphicon glyphicon-cog"> Configurações gerais Sistema</a>
+
           </div>
         </div>
         <hr>
 
         <!-- Form Cadastro -->
 
-           <div id="demo" class="collapse">
+          <div id="demo" class="collapse">
              <form>
                <div class="form-group">
                  <label for="exampleSelect1">Escolha o tipo de Cadastro</label>
@@ -136,7 +135,7 @@
 
            </div>
 
-            <div id="relatorio_curso" class="collapse">
+          <div id="relatorio_curso" class="collapse">
               <h3 align="center">Cursos Cadastrados</h3>
                   <br>
                   <br>
@@ -233,7 +232,15 @@
                 <p>Joaquim Alves &copy;</p>
               </footer>
 
+          <div id="pesquisa" class="row collapse">
+            <h4>Pesquisa de Geral</h4>
+            <hr>
+            <strong>Descrição</strong>
 
+              <div class="form">
+                <input type="text" placeholder="Descrição" class="form-control" id="descricao">
+              </div>
+            </div>
 
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
