@@ -20,7 +20,9 @@
 footer {
   background-color: black;
   color: white;
-  padding: 10px;
+  width:90%;
+  position: fixed;
+  bottom:0;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */

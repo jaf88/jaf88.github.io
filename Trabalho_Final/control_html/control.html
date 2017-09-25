@@ -45,8 +45,8 @@
                 data-toggle="dropdown">Minha Conta <span class="caret"></span> </a>
 
                 <ul class="dropdown-menu">
-                  <li> <a href="#">Editar</a> </li>
-                  <li><a href="../index.html">Sair</a></li>
+                  <li> <a href="#" class="glyphicon glyphicon-edit"> Editar</a> </li>
+                  <li><a href="../index.html" class="glyphicon glyphicon-off"> Sair</a></li>
                 </ul>
             </li>
           </ul>
@@ -54,201 +54,188 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="container">
-        <br><br>
+
         <div class="row">
           <div class="col-md-12 btn-group" role="group">
             <button type="button" class="btn btn-default glyphicon
-              glyphicon-education">Cadastro de Cursos</button>
+              glyphicon-education" data-toggle="collapse" data-target="#demo"> Cadastro Geral</button>
             <button type="button" class="btn btn-default glyphicon
-              glyphicon-education">Cadastro de Docentes</button>
-            <button type="button" class="btn btn-default glyphicon
-              glyphicon-education">Cadastro de Discentes</button>
-
+              glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio"> Relatórios Gerais</button>
             <button type="button" class="btn btn-default
-            glyphicon glyphicon-list-alt"> Notas Discentes </button>
+              glyphicon glyphicon-search"> Consultar Dados </button>
             <button type="button" class="btn btn-default
-            glyphicon glyphicon-file"> Consultar Dados </button>
+              glyphicon glyphicon-user"> Administração </button>
             <button type="button" class="btn btn-default
-            glyphicon glyphicon-cog"> Configurações gerais </button>
+            glyphicon glyphicon-cog"> Configurações gerais Sistema </button>
           </div>
         </div>
         <hr>
 
-          <div class="container">
-            <div class="row">
-              <h4>Pesquisa de Produtos</h4>
-              <hr>
-              <strong>Descrição</strong>
+        <!-- Form Cadastro -->
 
-              <div class="form">
-                <input type="text" placeholder="Descrição" class="form-control" id="descricao">
-              </div>
-              <br>
-              <button type="button" class="btn btn-primary
-                glyphicon glyphicon-search"> Pesquisar </button>
-              <button type="button" class="btn btn-primary
-                glyphicon glyphicon-refresh"> Recarregar </button>
-              <button type="button" class="btn btn-primary
-                glyphicon glyphicon-file"> Novo </button>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-md-3">
-                Registro por página
-                <div>
-                  <select class="form-control"name='option'>
-                    <option value='10'>10</option>
-                    <option value='9'>9</option>
-                    <option value='8'>8</option>
-                  </select>
+           <div id="demo" class="collapse">
+             <form>
+               <div class="form-group">
+                 <label for="exampleSelect1">Escolha o tipo de Cadastro</label>
+                 <select class="form-control" id="exampleSelect1">
+                   <option>Escolha uma Opção</option>
+                   <option>Cadastrar Curso</option>
+                   <option>Cadastrar Docente</option>
+                   <option>Cadastrar Discente</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                 <label for="exampleInputEmail1">Nome</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Informe o nome">
                 </div>
-              </div>
-              <div class="col-md-8">
-                <strong>Busca</strong>
-                <div class="form">
-                  <input type="text" placeholder="Busca" class="form-control" id="busca">
+               <div class="form-group">
+                 <label for="exampleInputEmail1">Endereço de Email</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-              </div>
-            </div>
+               <div class="form-group">
+                 <label for="senha">Senha</label>
+                 <input type="password" class="form-control" id="senha" placeholder="Password">
+               </div>
+               <div class="form-group">
+                 <label for="observacao">Observações</label>
+                 <textarea class="form-control" id="observacao" rows="3"></textarea>
+               </div>
+               <div class="form-group">
+                 <label for="documento">Documento</label>
+                 <input type="file" class="form-control-file" id="documento" aria-describedby="fileHelp">
+                 <small id="fileHelp" class="form-text text-muted">
+                   Anexe um documento digitalizado(RG + CPF ou Portaria de Funcionamento do Curso)
+                 </small>
+               </div>
+             <div class="form-check">
+               <label class="form-check-label">
+                 <input type="checkbox" class="form-check-input">
+                 Confirmo que todas as informações informadas são verdadeiras!
+               </label>
+             </div>
+             <button type="submit" class="btn btn-primary">Enviar</button>
+             <hr>
+             </form>
 
-          </div>
-
-
-          <br>
-
-          <table class="table table-striped table-hover table-condensed
-            table-bordered table-responsive">
-            <thead>
-              <tr>
-                <th>ID </th>
-                <th>Descrição </th>
-                <th>Situação</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Pizza</td>
-                <td><button class="btn btn-success btn-xs"> Ativo</button></td>
-                <td>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
-                    data-placement="top" title="Ver Detalhes"></button>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-edit"   data-toggle="tooltip"
-                    data-placement="top" title="Editar"></button>
-                  <button type="button" class="btn btn-xs
-                    glyphicon glyphicon-trash"  data-toggle="tooltip"
-                    data-pp="popover" data-content="" </button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>2</td>
-                <td>Refrigerante</td>
-                <td><button type="button" class="btn btn-success btn-xs">Ativo</button></td>
-                <td>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
-                    data-placement="top" title="Ver Detalhes"></button>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-edit"   data-toggle="tooltip"
-                    data-placement="top" title="Editar"></button>
-                  <button type="button" class="btn btn-xs
-                    glyphicon glyphicon-trash"  data-toggle="tooltip"
-                    data-pp="popover" data-content="" </button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>3</td>
-                <td>Cajuína</td>
-                <td><button type="button" class="btn btn-default btn-xs">Inativo</button></td>
-                <td>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
-                    data-placement="top" title="Ver Detalhes"></button>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-edit"   data-toggle="tooltip"
-                    data-placement="top" title="Editar"></button>
-                  <button type="button" class="btn btn-xs
-                    glyphicon glyphicon-trash"  data-toggle="tooltip"
-                    data-pp="popover" data-content="" </button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>4</td>
-                <td>Borda</td>
-                <td><button type="button" class="btn btn-success btn-xs">Ativo</button></td>
-                <td>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
-                    data-placement="top" title="Ver Detalhes"></button>
-                  <button type="button" class="btn btn-default btn-xs
-                    glyphicon glyphicon-edit"   data-toggle="tooltip"
-                    data-placement="top" title="Editar"></button>
-                  <button type="button" class="btn btn-xs
-                    glyphicon glyphicon-trash"  data-toggle="tooltip"
-                    data-pp="popover" data-content="" </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-              <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
-                      </div>
-                      <div class="modal-body">Deseja realmente esse registro?</div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-primary">Sim</button>
-                          <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-        <div id="bottom" class="row">
-           <div class="col-md-12">
-
-               <ul class="pagination">
-                   <li class="disabled"><a>&lt; Anterior</a></li>
-                   <li class="disabled"><a>1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
-               </ul><!-- /.pagination -->
            </div>
-      </div>
+          <!-- Relatórios -->
+           <div id="relatorio" class="collapse">
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+             <div align="center" class="row">
+               <div class="col-md-12 btn-group" role="group">
+                 <button type="button" class="btn btn-default glyphicon
+                   glyphicon-education" data-toggle="collapse" data-target="#relatorio_curso"> Relatórios de Cursos</button>
+                 <button type="button" class="btn btn-default glyphicon
+                   glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio_docente"> Relatórios de Docentes</button>
+                 <button type="button" class="btn btn-default glyphicon
+                  glyphicon-search" data-toggle="collapse" data-target="#relatorio_discente"> Relatórios de Discentes </button>
+               </div>
+             </div>
 
-      <script type="text/javascript">
+           </div>
 
-        var botoesConten =
-        '<div class="btn-group"><button class="btn btn-primary glyphicon glyphicon-ok"> Sim</button><button class="btn btn-default glyphicon glyphicon-remove"> Não</button></div>';
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip({title: "Remover"});
-          $('[data-pp="popover"]').popover({title: "Deseja realmente remover esse registro?",
-            content:botoesConten, html: true, placement: "left"});
-        });
+            <div id="relatorio_curso" class="collapse">
+              <h3 align="center">Cursos Cadastrados</h3>
+                  <br>
+                  <br>
+                  <table class="table table-striped table-hover table-condensed
+                    table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th>Nome do Curso </th>
+                        <th>Email do Curso </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Analise e Desenvolvimento de Sistemas</td>
+                        <td>analisedesenvolvimento@ifpi.edu.br</td>
+                      </tr>
 
-      </script>
+                      <tr>
+                        <td>Ciências da Computação</td>
+                        <td>cienciacomputacao@ifpi.edu.br</td>
+                      </tr>
+
+                      <tr>
+                        <td>Engenharia da Computação</td>
+                        <td>engenhariacomputacao@ifpi.edu.br</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <div id="relatorio_docente" class="collapse">
+                  <h3 align="center">Docentes Cadastrados</h3>
+                      <br>
+                      <br>
+                      <table class="table table-striped table-hover table-condensed
+                        table-bordered table-responsive">
+                        <thead>
+                          <tr>
+                            <th>Nome do Docente </th>
+                            <th>Email do Docente </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Joãozinho da Silva Xavier</td>
+                            <td>joazinho@ifpi.edu.br</td>
+                          </tr>
+
+                          <tr>
+                            <td>Mariazinha da Costa Silva</td>
+                            <td>mariazinha@ifpi.edu.br</td>
+                          </tr>
+
+                          <tr>
+                            <td>Pedrinho Silva Souza</td>
+                            <td>pedrinho@ifpi.edu.br</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                </div>
+                <div id="relatorio_discente" class="collapse">
+                  <h3 align="center">Discentes Cadastrados</h3>
+                      <br>
+                      <br>
+                      <table class="table table-striped table-hover table-condensed
+                        table-bordered table-responsive">
+                        <thead>
+                          <tr>
+                            <th>Nome dos Discentes </th>
+                            <th>Email dos Discentes </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Papacapim Cardoso Silva</td>
+                            <td>papacapim@ifpi.edu.br</td>
+                          </tr>
+
+                          <tr>
+                            <td>Bina Alves Silva</td>
+                            <td>binaalves@ifpi.edu.br</td>
+                          </tr>
+
+                          <tr>
+                            <td>Bino Maciel Souza</td>
+                            <td>binomaciel@ifpi.edu.br</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                </div>
+              <footer class="container-fluid text-center">
+                <p>Joaquim Alves &copy;</p>
+              </footer>
+
+
 
     </div>
-
-  <footer class="container-fluid text-center">
-    <p>Joaquim Alves &copy;</p>
-  </footer>
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../aula18/bootstrap/js/bootstrap.min.js"></script>
