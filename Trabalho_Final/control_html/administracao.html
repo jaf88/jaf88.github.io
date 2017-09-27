@@ -39,6 +39,8 @@
           <ul class="nav navbar-nav">
             <li><a href="control.html">Painel de Controle</a></li>
             <li class="active"><a href="cursos.html">Cursos</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#janela"> Messages <span class="badge">4</span>
+            </a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -57,20 +59,109 @@
     <h1 align="center">Administração</h1>
 
     <div class="row">
-      <div class="col-md-12 btn-group" role="group">
-        <button type="button" class="btn btn-default glyphicon
-          glyphicon-user" data-toggle="collapse" data-target="#demo"> Dados Administrador</button>
-        <button type="button" class="btn btn-default glyphicon
-          glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio"> Relatório de Fluxo de Dados</button>
-        <button type="button" class="btn btn-default glyphicon
-          glyphicon-cog" data-toggle="collapse" data-target="#pesquisa"> Gerenciar Novos Cursos </button>
-        <a href="administracao.html" class="btn btn-default glyphicon glyphicon-check"> Adicionar Disciplinas</a>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-md-12 btn-group" role="group">
+            <button type="button" class="btn btn-default glyphicon
+              glyphicon-user" data-toggle="collapse" data-target="#demo"> Dados Administrador</button>
+            <button type="button" class="btn btn-default glyphicon
+              glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio"> Relatório de Fluxo de Dados</button>
+            <button type="button" class="btn btn-default glyphicon
+              glyphicon-cog" data-toggle="collapse" data-target="#pesquisa"> Gerenciar Novos Cursos </button>
+            <a href="administracao.html" class="btn btn-default glyphicon glyphicon-check"> Adicionar Disciplinas</a>
 
+          </div>
+        </div>
       </div>
+
     </div>
 
+    <!-- Dados do Administrador -->
+    <div id="demo" class="collapse">
+
+      <div class="row">
+        <br> <br>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 align="center"> Dados do Administrador</h4>
+            <hr>
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h4>Dados Pessoais</h4>
+                <hr>
+                    <label for="nome">Nome: Joãzinho da Costa Silva</label> <br>
+                    <label for="email">Email: joazinhosilva@adm.com</label> <br>
+                    <label for="estadocivil">Estado civil: Seguindo o Baile</label> <br>
+                    <label for="idade">Idade: 39 Anos</label> <br>
+                    <label for="naturalidade">Naturalidade: Brasileiro</label> <br>
+                    <label for="cidade">Cidade: Teresina</label> <br>
+                    <label for="estado">Estado: Piauí</label> <br>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h4>Endereço</h4>
+                  <hr>
+                  <label for="bairro">Bairro: Vermelha </label> <br>
+                  <label for="rua">Rua: Pedro Freitas</label> <br>
+                  <label for="complemento">Complemento: Avenida Pedro Freitas</label> <br>
+                  <label for="cep">Cep: 64018-000</label><br>
+                </div>
+              </div>
 
 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <footer class="container-fluid text-center">
+        <p>Joaquim Alves &copy;</p>
+      </footer>
+    </div>
+
+    <!--Modal Messangens -->
+    <form class="modal" id="janela">
+
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+              name="button"> <span>&times;</span> </button>
+
+            <h4 align="center" class="modal-title">
+              Mensagens do Seu sistema</h4>
+
+          </div>
+
+          <!-- Modal das Mensagens-->
+          <div class="modal-body">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-info">
+                  Cadastre o nova disciplina de SO - Curso de ADS</li>
+                <li class="list-group-item list-group-item-info">
+                  Melhorem as funcionalidades deste sistema</li>
+                <li class="list-group-item list-group-item-info">
+                  Cadastre um novo curso</li>
+                <li class="list-group-item list-group-item-info">
+                  Cadastre o nova disciplina de Redes - Curso de LI</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </form>
 
     <footer class="container-fluid text-center">
       <p>Joaquim Alves &copy;</p>
