@@ -98,17 +98,17 @@
                      </select>
                    </div>
                    <div class="form-group">
-                     <label for="exampleInputEmail1">Nome</label>
-                     <input type="email" class="form-control" id="exampleInputEmail1"
+                     <label for="exampleINome">Nome*</label>
+                     <input type="nome" class="form-control" id="nome"
                       aria-describedby="emailHelp" placeholder="Informe o nome">
                     </div>
                    <div class="form-group">
-                     <label for="exampleInputEmail1">Endereço de Email</label>
+                     <label for="exampleInputEmail1">Endereço de Email*</label>
                      <input type="email" class="form-control" id="exampleInputEmail1"
                       aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                    <div class="form-group">
-                     <label for="senha">Senha</label>
+                     <label for="senha">Senha*</label>
                      <input type="password" class="form-control" id="senha" placeholder="Password">
                    </div>
                    <div class="form-group">
@@ -128,8 +128,12 @@
                      Confirmo que todas as informações informadas são verdadeiras!
                    </label>
                  </div>
-                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                  <hr>
+                 <label>*Campos Requeridos</label>
+                 <hr>
+                 <button type="submit" class="btn btn-primary">Salvar</button>
+                 <button type="submit" class="btn btn-warning">Limpar</button>
+                 <button type="submit" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Sair</button>                 <hr>
                  </form>
               </div>
             </div>
@@ -142,11 +146,11 @@
                 <div align="center" class="row">
                   <div class="col-md-12 btn-group" role="group">
                     <button type="button" class="btn btn-default glyphicon
-                      glyphicon-education" data-toggle="collapse" data-target="#relatorio_curso"> Relatórios de Cursos</button>
+                      glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio_curso"> Relatórios de Cursos</button>
                     <button type="button" class="btn btn-default glyphicon
                       glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio_docente"> Relatórios de Docentes</button>
                     <button type="button" class="btn btn-default glyphicon
-                     glyphicon-search" data-toggle="collapse" data-target="#relatorio_discente"> Relatórios de Discentes </button>
+                     glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio_discente"> Relatórios de Discentes </button>
                   </div>
                 </div>
               </div>
@@ -160,7 +164,7 @@
                 <div class="row">
                   <div class="table-responsive col-sm-12">
                     <table class="table table-striped table-hover table-condensed
-                      table-bordered">
+                      table-bordered ellspacing="0" cellpadding="0"">
                       <thead>
                         <tr>
                           <th>Nome do Curso </th>
@@ -190,79 +194,123 @@
             </div>
           </div>
 
-                <div id="relatorio_docente" class="collapse">
-                  <h3 align="center">Docentes Cadastrados</h3>
-                      <br>
-                      <br>
-                      <table class="table table-striped table-hover table-condensed
-                        table-bordered table-responsive">
-                        <thead>
-                          <tr>
-                            <th>Nome do Docente </th>
-                            <th>Email do Docente </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Joãozinho da Silva Xavier</td>
-                            <td>joazinho@ifpi.edu.br</td>
-                          </tr>
+          <!--Relatorio Docentes-->
+          <div id="relatorio_docente" class="collapse">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3 align="center">Docentes Cadastrados</h3>
+                <table class="table table-striped table-hover table-condensed
+                  table-bordered table-responsive">
+                  <thead>
+                    <tr>
+                      <th>Nome do Docente </th>
+                      <th>Email do Docente </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Joãozinho da Silva Xavier</td>
+                      <td>joazinho@ifpi.edu.br</td>
+                    </tr>
 
-                          <tr>
-                            <td>Mariazinha da Costa Silva</td>
-                            <td>mariazinha@ifpi.edu.br</td>
-                          </tr>
+                    <tr>
+                      <td>Mariazinha da Costa Silva</td>
+                      <td>mariazinha@ifpi.edu.br</td>
+                    </tr>
+                    <tr>
+                      <td>Pedrinho Silva Souza</td>
+                      <td>pedrinho@ifpi.edu.br</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
-                          <tr>
-                            <td>Pedrinho Silva Souza</td>
-                            <td>pedrinho@ifpi.edu.br</td>
-                          </tr>
-                        </tbody>
-                      </table>
+          <!--Relatorio Discentes-->
+          <div id="relatorio_discente" class="collapse">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3 align="center">Discentes Cadastrados</h3>
 
-                </div>
-                <div id="relatorio_discente" class="collapse">
-                  <h3 align="center">Discentes Cadastrados</h3>
-                      <br>
-                      <br>
-                      <table class="table table-striped table-hover table-condensed
-                        table-bordered table-responsive">
-                        <thead>
-                          <tr>
-                            <th>Nome dos Discentes </th>
-                            <th>Email dos Discentes </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Papacapim Cardoso Silva</td>
-                            <td>papacapim@ifpi.edu.br</td>
-                          </tr>
-
-                          <tr>
-                            <td>Bina Alves Silva</td>
-                            <td>binaalves@ifpi.edu.br</td>
-                          </tr>
-
-                          <tr>
-                            <td>Bino Maciel Souza</td>
-                            <td>binomaciel@ifpi.edu.br</td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                </div>
+                  <table class="table table-striped table-hover table-condensed
+                    table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th>Nome dos Discentes </th>
+                        <th>Email dos Discentes </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Papacapim Cardoso Silva</td>
+                        <td>papacapim@ifpi.edu.br</td>
+                      </tr>
+                      <tr>
+                        <td>Bina Alves Silva</td>
+                        <td>binaalves@ifpi.edu.br</td>
+                      </tr>
+                      <tr>
+                        <td>Bino Maciel Souza</td>
+                        <td>binomaciel@ifpi.edu.br</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
               <footer class="container-fluid text-center">
                 <p>Joaquim Alves &copy;</p>
               </footer>
 
-          <div id="pesquisa" class="row collapse">
+          <div id="pesquisa" class="collapse">
             <h4>Pesquisa de Geral</h4>
             <hr>
             <strong>Descrição</strong>
 
-              <div class="form">
-                <input type="text" placeholder="Descrição" class="form-control" id="descricao">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group h2">
+                    <input type="text" placeholder="Descrição" class="form-control" id="descricao">
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary" data-toggle="collapse" data-target="#pesquisa_resultados"
+                        type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Resultados da Pesquisa-->
+            <div id="pesquisa_resultados" class="collapse">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h1>Resultados da Pesquisa</h1>
+
+                  <table class="table table-striped table-hover table-condensed
+                    table-bordered ">
+                    <thead>
+                      <tr>
+                        <th>Descrição </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Analise e Desenvolvimento de Sistemas</td>
+                      </tr>
+                      <tr>
+                        <td>Analise e Desenvolvimento de Sistemas</td>
+                      </tr>
+                      <tr>
+                        <td>Analise e Desenvolvimento de Sistemas</td>
+                      </tr>
+                      <tr>
+                        <td>Analise e Desenvolvimento de Sistemas</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
 
