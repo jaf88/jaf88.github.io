@@ -67,8 +67,9 @@
             <button type="button" class="btn btn-default glyphicon
               glyphicon-list-alt" data-toggle="collapse" data-target="#relatorio"> Relatório de Fluxo de Dados</button>
             <button type="button" class="btn btn-default glyphicon
-              glyphicon-cog" data-toggle="collapse" data-target="#pesquisa"> Gerenciar Novos Cursos </button>
-            <a href="administracao.html" class="btn btn-default glyphicon glyphicon-check"> Adicionar Disciplinas</a>
+              glyphicon-cog" data-toggle="collapse" data-target="#cursoNovo"> Gerenciar Novos Cursos </button>
+            <button class="btn btn-default glyphicon
+              glyphicon-check" data-toggle="collapse" data-target="#disciplina"> Adicionar Disciplinas</button>
 
           </div>
         </div>
@@ -163,10 +164,170 @@
       </div>
     </form>
 
+    <!--Form Cadastro de Disciplina-->
+    <div id="disciplina" class="collapse">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3>Adicionar Disciplina</h3>
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+               <form>
+                 <div class="form-group">
+                   <label for="exampleSelect1">Escolha o Curso</label>
+                   <select class="form-control" id="exampleSelect1">
+                     <option>Escolha uma Opção</option>
+                     <option>Análise e Desenvolvimento de Sistemas</option>
+                     <option>Bacharelado em Computação</option>
+                     <option>Licenciatura em Informática</option>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="exampleINome">Nome da Disciplina</label>
+                   <input type="nome" class="form-control" id="nome"
+                    aria-describedby="emailHelp" placeholder="Informe o nome do curso">
+                  </div>
+                 <div class="form-group">
+                   <label for="cargaHoraria">Carga Horária da Disciplina</label>
+                   <input type="nome" class="form-control" id="cargaH"
+                    aria-describedby="emailHelp" placeholder="Informe a carga horária">
+                  </div>
+                 <div class="form-group">
+                   <label for="observacao">Observações</label>
+                   <textarea class="form-control" id="observacao" rows="3"></textarea>
+                 </div>
+                 <div class="form-group">
+                   <label for="documento">Ementa da Disciplina</label>
+                   <input type="file" class="form-control-file" id="documento" aria-describedby="fileHelp">
+                   <small id="fileHelp" class="form-text text-muted">
+                     Anexe a Ementa da Disciplina digitalizada
+                   </small>
+                 </div>
+               <div class="form-check">
+                 <label class="form-check-label">
+                   <input type="checkbox" class="form-check-input">
+                   Confirmo que todas as informações informadas são verdadeiras!
+                 </label>
+               </div>
+               <hr>
+               <label>*Campos Requeridos</label>
+               <hr>
+               <button type="submit" class="btn btn-primary">Salvar</button>
+               <button type="submit" class="btn btn-warning">Limpar</button>
+               <button type="submit" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Sair</button>                 <hr>
+               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Gerenciar Novos Cursos-->
+    <div id="cursoNovo" class="collapse">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h1>Útimos Cursos Cadastrados</h1>
+
+          <table class="table table-striped table-hover table-condensed
+            table-bordered ">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Descrição </th>
+                <th>Situação</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>Tecnologo em Redes de Computadores</td>
+                <td><button class="btn btn-success btn-xs"> Novo</button></td>
+                <td>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
+                    data-placement="top" title="Ver Detalhes"></button>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-edit"   data-toggle="tooltip"
+                    data-placement="top" title="Editar"></button>
+                  <button type="button" class="btn btn-xs
+                    glyphicon glyphicon-trash"  data-toggle="tooltip"
+                    data-pp="popover" data-content="" </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>11</td>
+                <td>Bacharelado em Ciências da Computação</td>
+                <td><button type="button" class="btn btn-success btn-xs">Novo</button></td>
+                <td>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
+                    data-placement="top" title="Ver Detalhes"></button>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-edit"   data-toggle="tooltip"
+                    data-placement="top" title="Editar"></button>
+                  <button type="button" class="btn btn-xs
+                    glyphicon glyphicon-trash"  data-toggle="tooltip"
+                    data-pp="popover" data-content="" </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>Bacharelado em Engenharia da Computação</td>
+                <td><button type="button" class="btn btn-success btn-xs">Novo</button></td>
+                <td>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
+                    data-placement="top" title="Ver Detalhes"></button>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-edit"   data-toggle="tooltip"
+                    data-placement="top" title="Editar"></button>
+                  <button type="button" class="btn btn-xs
+                    glyphicon glyphicon-trash"  data-toggle="tooltip"
+                    data-pp="popover" data-content="" </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>13</td>
+                <td>Bacharelado em Engenharia Mecânica</td>
+                <td><button type="button" class="btn btn-success btn-xs">Novo</button></td>
+                <td>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-list-alt" data-toggle="tooltip"
+                    data-placement="top" title="Ver Detalhes"></button>
+                  <button type="button" class="btn btn-default btn-xs
+                    glyphicon glyphicon-edit"   data-toggle="tooltip"
+                    data-placement="top" title="Editar"></button>
+                  <button type="button" class="btn btn-xs
+                    glyphicon glyphicon-trash"  data-toggle="tooltip"
+                    data-pp="popover" data-content="" </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <footer class="container-fluid text-center">
       <p>Joaquim Alves &copy;</p>
     </footer>
   </div>
+
+  <script type="text/javascript">
+
+    var botoesConten =
+    '<div class="btn-group"><button class="btn btn-primary glyphicon glyphicon-ok"> Sim</button><button class="btn btn-default glyphicon glyphicon-remove"> Não</button></div>';
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip({title: "Remover"});
+      $('[data-pp="popover"]').popover({title: "Deseja realmente remover esse registro?",
+        content:botoesConten, html: true, placement: "left"});
+    });
+
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../../aula18/bootstrap/js/bootstrap.min.js"></script>
