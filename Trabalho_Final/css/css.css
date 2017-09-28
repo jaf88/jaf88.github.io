@@ -53,3 +53,10 @@ body {
   color: #2e6da4;
   float: left;
 }
+
+a{
+  color: white;
+}
+a:hover{
+  color: white;
+}
