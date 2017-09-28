@@ -18,7 +18,12 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script language=javascript type="text/javascript">
+    dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+    monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho","julho", "agosto",
+    "setembro","outubro", "novembro", "dezembro")
+    now = new Date;
+  </script>
 </head>
 <body>
 
@@ -52,6 +57,11 @@
                   <li> <a href="#" class="glyphicon glyphicon-globe"> Local: Teresina</a> </li>
                   <li> <a href="#" class="glyphicon glyphicon-exclamation-sign"> Versão 1.1000</a> </li>
                   <li> <a href="#" class="glyphicon glyphicon-edit"> Alterar Senha</a> </li>
+                  <li>
+                    <a href="#" class="glyphicon glyphicon-calendar"> Data<script language=javascript type="text/javascript">
+                    document.write ("<h5>"+ now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +
+                      now.getFullYear () + "</h5>")
+                  </script></a></li>
                   <li><a href="../index.html" class="glyphicon glyphicon-off"> Sair</a></li>
                 </ul>
           </ul>
@@ -95,7 +105,7 @@
                   <h4>Dados Pessoais</h4>
                 <hr>
                     <label for="nome">Nome: Xiquin da Costa Silva</label> <br>
-                    <label for="email">Email: joazinhosilva@adm.com</label> <br>
+                    <label for="email">Email: xiquinsilva@adm.com</label> <br>
                     <label for="estadocivil">Estado civil: Seguindo o Baile</label> <br>
                     <label for="idade">Idade: 39 Anos</label> <br>
                     <label for="naturalidade">Naturalidade: Brasileiro</label> <br>
