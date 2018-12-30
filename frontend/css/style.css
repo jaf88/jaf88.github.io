@@ -1,0 +1,44 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #00d68f 7px solid;
+
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url(../img/ifpictzs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 650px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 650px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#home-section .row {
+  padding-top: 90px;
+}
+
+#home-section .row .cardEntrar{
+  opacity: 0.8;
+}
+
+#atpa-section .row{
+  color: black;
+  text-align: center;
+}
+
+#pccs-section .row{
+  text-align: center;
+}
