@@ -14,7 +14,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="home">
-
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
     <div class="container">
       <a href="index.html" class="navbar-brand"><i class="fas fa-graduation-cap"> SRAA </i></a>
@@ -24,19 +23,23 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#home" class="nav-link btn">Entrar</a>
+            <a href="#home" class="nav-link btn">
+              Entrar <i class="fas fa-sign-in-alt"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#atpa-head-section" class="nav-link btn">ATPA</a>
+            <a href="#atpa-head-section" class="nav-link btn">
+              ATPA <i class="far fa-bookmark"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#pccs-head-section" class="nav-link btn">PCCS</a>
+            <a href="#pccs-head-section" class="nav-link btn">
+              PCCS <i class="far fa-bookmark"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#cadastro-head-section" class="nav-link btn">Cadastre-se</a>
+            <a href="#cadastro-head-section" class="nav-link btn">
+              Cadastre-se <i class="fas fa-clipboard"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#share-head-section" class="nav-link btn">Contato</a>
+            <a href="#contact-section" class="nav-link btn">Contato <i class="fas fa-comment-dots"></i></a>
           </li>
         </ul>
       </div>
@@ -49,7 +52,8 @@
       <div class="home-inner container">
         <div class="row">
           <div class="col-lg-12 col-md-10 col-sm-10 col-12">
-            <h3 class="text-center">Seja bem vindo ao Sistema de Registro de Atividades Acadêmicas do IFPI</h3>
+            <h3 class="text-center">Seja bem vindo ao Sistema de Registro
+              de Atividades Acadêmicas do IFPI</h3>
           </div>
         </div>
         <div class="row">
@@ -77,7 +81,7 @@
                   </div>
                   <input type="submit" value="Entrar" class="btn btn-primary btn-block">
                   <br>
-                  <h4> <a class="btn btn-warning" href="#">Cadastre-se</a>
+                  <h4> <a class="btn btn-warning" href="#cadastro-head-section">Cadastre-se</a>
                   <a class="btn btn-danger"href="#">Recuperar Senha</a> </h4>
                 </form>
               </div>
@@ -97,7 +101,8 @@
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
-          <h1 class="display-4">ATPA</h1>
+          <br>
+          <h1 class="display-5">ATPA</h1>
           <p class="lead">
               Atividades Teórico-Práticas de Aprofundamento (ATPA) em Áreas
               Específicas de Interesse do Estudante dos Cursos de Licenciatura do Instituto
@@ -118,7 +123,7 @@
               Conselho Superior (CONSUP) do IFPI.
               A resolução encontra-se na integra no seguinte
               <a class="btn btn-btn-secondary" target="_blank" href="https://www5.ifpi.edu.br/consup/attachments/article/16/Resolu%C3%A7%C3%A3o%20n%C2%BA%20017%20Atividades%20Te%C3%B3rico-Pr%C3%A1ticas%20de%20Aprofundamento.pdf">
-                 arquivo <i class="fas fa-file-pdf"></i>
+                <strong>arquivo <i class="fas fa-file-pdf"></i> </strong>
               </a>
             </h5>
           </div>
@@ -139,11 +144,12 @@
   </section>
 
   <!-- PCCS HEAD -->
-  <section id="pccs-head-section" class="bg-primary">
+  <section id="pccs-head-section">
     <div class="container">
       <div class="row">
-        <div class="col text-center py-5">
-          <h1 class="display-4">PCCS</h1>
+        <div class="col-lg-12 text-center py-5">
+          <br>
+          <h1 class="display-5">PCCS</h1>
           <p class="lead">
             Práticas Curriculares em Comunidade e em Sociedade –
             nos Currículos dos Cursos de Graduação do IFPI.</p>
@@ -153,11 +159,12 @@
   </section>
 
   <!-- PCCS SECTION -->
-  <section id="pccs-section" class="py-5">
+  <section id="pccs-section" class="bg-light py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg- 12 col-md-12 col-sm-12 col-12">
-          <br> <br>
+        <div class="col-md-12">
+        <br>
+        <div class="d-flex">
             <h5 class="display-5">
               As PCCS foram regulamentadas através da resolução Nº 016/2015 -
               Conselho Superior (CONSUP) do IFPI.
@@ -166,8 +173,13 @@
                 arquivo <i class="fas fa-file-pdf"></i>
               </a>
             </h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg- 12 col-md-12 col-sm-12 col-12">
             <br><br>
-          <h5 class="display-5">Entendemos por PCCS as seguites atividades de extensão</h5>
+          <h5 class="display-5"> <strong> Entendemos por PCCS as seguites atividades de extensão</h5> </strong>
             <ul>
               <h5>  <i class="far fa-arrow-alt-circle-right"> Projeto. </i></h5>
               <h5>  <i class="far fa-arrow-alt-circle-right"> Programa.</i> </h5>
@@ -179,7 +191,7 @@
     </div>
   </section>
 
-  <!-- SHARE HEAD -->
+  <!-- Cadastro head -->
   <section id="cadastro-head-section" class="bg-primary">
     <div class="container">
       <div class="row">
@@ -192,14 +204,25 @@
     </div>
   </section>
 
-  <!-- SHARE SECTION -->
+  <!-- Cadastro SECTION -->
   <section id="cadastro-section" class="bg-light text-muted py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <select class="form-control form-control-lg">
+            <option>Large select</option>
+          </select>
+          <select class="form-control">
+            <option>Default select</option>
+          </select>
+          <select class="form-control form-control-sm">
+            <option>Small select</option>
+          </select>
         </div>
         <div class="col-md-6">
-          <h3>Share What You Create</h3>
+          <form class="" action="index.html" method="post">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </form>
         </div>
       </div>
     </div>
@@ -209,12 +232,11 @@
   <footer id="main-footer" class="bg-dark">
     <div class="container">
       <div class="row">
-        <div class="col text-center py-4">
-          <p>SRAA - Instituto Federal do Piauí - Campus Teresina Zona Sul
-           - Avenida Pedro Freitas, 1020 - São Pedro </p>
-          <p>Copyright &copy;
+        <div class="col text-center py-2">
+          SRAA - Instituto Federal do Piauí - Campus Teresina Zona Sul
+           - Avenida Pedro Freitas, 1020 - São Pedro. Copyright &copy;
             <span id="year"></span>
-          </p>
+
           <!--<button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
           -->
         </div>
@@ -227,7 +249,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Contact Us</h5>
+          <h5 class="modal-title">Contate-nos</h5>
           <button class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
@@ -235,7 +257,7 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="name">Name</label>
+              <label for="name">Nome</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group">
@@ -243,13 +265,13 @@
               <input type="email" class="form-control">
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message">Messagem</label>
               <textarea class="form-control"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary btn-block">Submit</button>
+          <button class="btn btn-primary btn-block">Enviar</button>
         </div>
       </div>
     </div>
@@ -257,34 +279,20 @@
 
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
     // Init Scrollspy
     $('body').scrollspy({ target: '#main-nav' });
 
-    // Smooth Scrolling
-    /*$("#main-nav a").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          window.location.hash = hash;
-        });
-      }
-    }); */
     $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    $("#main-nav a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -299,7 +307,7 @@
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });

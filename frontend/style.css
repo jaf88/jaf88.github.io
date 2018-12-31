@@ -5,8 +5,9 @@ body {
 
 .navbar {
   border-bottom: #00d68f 7px solid;
-
-  opacity: 0.8;
+  /*opacity: 0.8;*/
+}
+ul .nav-tabs{
 }
 
 #home-section {
@@ -40,5 +41,16 @@ body {
 }
 
 #pccs-section .row{
+  color: black;
   text-align: center;
+}
+
+
+#cadastro-head-section {
+  width: 100%;
+  /*min-height: 10px;*/
+}
+
+#cadastro-section {
+  min-height: 400px;
 }
