@@ -1,6 +1,7 @@
 body {
-  background: #333;
+  background: black;
   color: #fff;
+
 }
 
 .navbar {
@@ -10,7 +11,7 @@ body {
 ul .nav-tabs{
 }
 
-#home-section {
+#entrar-section {
   background: url(ifpictzs.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,7 @@ ul .nav-tabs{
   min-height: 650px;
 }
 
-#home-section .dark-overlay {
+#entrar-section .dark-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,13 +28,18 @@ ul .nav-tabs{
   background: rgba(0, 0, 0, 0.5);
 }
 
-#home-section .row {
-  padding-top: 90px;
+#entrar-section .row {
+  padding-top: 62px;
 }
 
-#home-section .row .cardEntrar{
+#entrar-section .row .cardEntrar{
   opacity: 0.8;
 }
+
+#entrar-section .row .cardrow {
+
+}
+
 
 #atpa-section .row{
   color: black;
