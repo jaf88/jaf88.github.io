@@ -39,7 +39,8 @@
               Cadastre-se <i class="fas fa-clipboard"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#contact-section" class="nav-link btn">Contato <i class="fas fa-comment-dots"></i></a>
+            <a href="#contact-section" class="nav-link btn" data-toggle="modal" data-target="#contactModal">
+              Contato <i class="fas fa-comment-dots"></i></a>
           </li>
         </ul>
       </div>
@@ -192,11 +193,11 @@
   </section>
 
   <!-- Cadastro head -->
-  <section id="cadastro-head-section" class="bg-primary">
+  <section id="cadastro-head-section" class="bg-success">
     <div class="container">
       <div class="row">
-        <div class="col text-center py-5">
-          <h1 class="display-4">Cadastre-se</h1>
+        <div class="col text-center py-5"> <br>
+          <h1 class="display-5">Cadastre-se</h1>
           <p class="lead"><h5> Faça o seu cadastro e começe a registrar e fazer o acompanhamento
             de suas atividades acadêmicas</h5></p>
         </div>
@@ -209,14 +210,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <select class="form-control form-control-lg">
-            <option>Large select</option>
-          </select>
+          <p class="text-center"> <strong> Tipo de Usuário </strong></p>
           <select class="form-control">
-            <option>Default select</option>
-          </select>
-          <select class="form-control form-control-sm">
-            <option>Small select</option>
+            <option>Escolha seu tipo</option>
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
           </select>
         </div>
         <div class="col-md-6">
@@ -288,7 +286,7 @@
     $('#year').text(new Date().getFullYear());
 
     // Init Scrollspy
-    $('body').scrollspy({ target: '#main-nav' });
+    //$('body').scrollspy({ target: '#main-nav' });
 
     $(document).ready(function(){
   // Add smooth scrolling to all links
