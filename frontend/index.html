@@ -39,7 +39,7 @@
               Cadastre-se <i class="fas fa-clipboard"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#contact-section" class="nav-link btn" data-toggle="modal" data-target="#contactModal">
+            <a href="#" class="nav-link btn" data-toggle="modal" data-target="#contactModal">
               Contato <i class="fas fa-comment-dots"></i></a>
           </li>
         </ul>
@@ -199,8 +199,8 @@
   <section id="cadastro-head-section" class="bg-success">
     <div class="container">
       <div class="row">
-        <div class="col text-center py-5"> <br>
-          <h1 class="display-5">Cadastre-se</h1>
+        <div class="col text-center py-4"> <br>
+          <h1 class="py-2">Cadastre-se</h1>
           <p class="lead"><h5> Faça o seu cadastro e começe a registrar e fazer o acompanhamento
             de suas atividades acadêmicas</h5></p>
         </div>
@@ -213,28 +213,76 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <p class="text-center"> <strong> Tipo de Usuário </strong></p>
-          <form>
-            <div class="form-group">
-              <label for="nomeusuario">Informe seu nome</label>
-              <input type="text" class="form-control" id="nomeusuario" placeholder="Nome">
-            </div>
-          </form>
-          <select class="form-control">
-            <option>Escolha seu tipo</option>
-            <option value="professor">Professor</option>
-            <option value="aluno">Aluno</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <form class="" action="index.html" method="post">
-            <i class="fas fa-chalkboard-teacher"></i>
-          </form>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ProfessorModal">
+            Cadastro de Professor
+          </a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Professor MODAL -->
+  <div class="modal fade text-dark" id="ProfessorModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cadastro de Professor(a)</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <select class="form-control" name="Seleciona">
+                <option value="">Sexo</option>
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="confirmasenha">Confirma Senha</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">CPF</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" name="Seleciona">
+                <option value="">Titulação</option>
+                <option value="">Grauduação</option>
+                <option value="">Especialização</option>
+                <option value="">Mestrado</option>
+                <option value="">Doutorado</option>
+                <option value="">Pós Doutorado</option>
+              </select>
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- FOOTER -->
   <footer id="main-footer" class="bg-dark">
     <div class="container">
