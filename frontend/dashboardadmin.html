@@ -51,12 +51,12 @@
   </nav>
 
   <!-- HEADER -->
-  <header id="main-header" class="py-2 bg-primary text-white">
+  <header id="main-header" class="py-2 bg-info text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1>
-            <i class="fas fa-cog"></i> Administração</h1>
+            <i class="fas fa-cog"></i> Administração Geral</h1>
         </div>
       </div>
     </div>
@@ -67,33 +67,24 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addClasseAtividadeModal">
-            <i class="fas fa-plus"></i> Classe <br>de Atividade
+          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addAtividadeComplementaresModal">
+            <i class="fas fa-plus"></i> Atividades <br>Complementares
           </a>
         </div>
+
         <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addCategoriaModal">
-            <i class="fas fa-plus"></i> Categoria <br> de Atividades
-          </a>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addAtividadesModal">
-            <i class="fas fa-plus"></i> Adicionar <br>Atividades
-          </a>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addCursoModal">
+          <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addCursoModal">
             <i class="fas fa-plus"></i> Campus / <br>Curso
           </a>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addPermissaoModal">
-            <i class="fas fa-plus"></i> Permissões <br> Usuário
+          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addGrupoPermissaoModal">
+            <i class="fas fa-plus"></i> Grupos / <br> Permissões
           </a>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 col-12">
-          <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUsuarioModal">
-            <i class="fas fa-plus"></i> Grupos <br>Usuário
+          <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addUsuarioModal">
+            <i class="fas fa-plus"></i> Cadastrar <br> Usuário
           </a>
         </div>
       </div>
@@ -106,7 +97,7 @@
       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
         <div class="card text-center bg-primary text-white mb-3">
           <div class="card-body">
-            <h3>ATPA/PCCS</h3>
+            <strong>Atividades Complementares</strong>
             <h4 class="display-4">
               <i class="fas fa-user-graduate"></i> 20
             </h4>
@@ -117,7 +108,7 @@
       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
         <div class="card text-center bg-success text-white mb-3">
           <div class="card-body">
-            <h3>Campus/Cursos</h3>
+            <strong>Campus/Cursos</strong>
             <h4 class="display-4">
               <i class="fas fa-graduation-cap"></i> 4
             </h4>
@@ -126,27 +117,27 @@
         </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-        <div class="card text-center bg-warning text-white mb-3">
+        <div class="card text-center bg-primary text-white mb-3">
           <div class="card-body">
-            <h3>Usuários</h3>
+            <strong>Grupos/Permissões</strong>
             <h4 class="display-4">
-              <i class="fas fa-users"></i> 2000
+              <i class="fas fa-users-cog"></i> 4
             </h4>
             <a href="users.html" class="btn btn-outline-light btn-sm">Gerencie <i class="fas fa-cog"></i></a>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-      <div class="card text-center bg-warning text-white mb-3">
-        <div class="card-body">
-          <h3>Grupo Usuários</h3>
-          <h4 class="display-4">
-            <i class="fas fa-users-cog"></i></i> 4
-          </h4>
-          <a href="users.html" class="btn btn-outline-light btn-sm">Gerencie <i class="fas fa-cog"></i></a>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div class="card text-center bg-success text-white mb-3">
+          <div class="card-body">
+            <strong>Usuários</strong>
+            <h4 class="display-4">
+              <i class="fas fa-users"></i> 200
+            </h4>
+            <a href="users.html" class="btn btn-outline-light btn-sm">Gerencie <i class="fas fa-cog"></i></a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
   </<section>
@@ -169,11 +160,11 @@
 
   <!-- MODALS -->
   <!-- ADD ATIVIDADES COMPLEMENTARES MODAL -->
-  <div class="modal fade text-dark" id="addCategoriaModal">
+  <div class="modal fade text-dark" id="addAtividadeComplementaresModal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header bg-warning text-white">
-          <h5 class="modal-title">Atividades complementares <i class="fas fa-pencil-alt"></i></h5>
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title"> Atividades complementares <i class="fas fa-pencil-alt"></i></h5>
           <button class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
@@ -340,24 +331,6 @@
               </form>
             </div>
           </div>
-          <!--<form>
-            <div class="form-group">
-              <label for="name">Nome do Curso</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="" class="form-group">Campus</label>
-              <select class="form-control" name="">
-                <option value="">Teste1</option>
-                <option value="">Teste2</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Status</label>
-              <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
-              <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
-            </div>
-          </form>-->
         </div>
         <div class="modal-footer">
           <button class="btn btn-warning" data-dismiss="modal">Salvar</button>
@@ -366,6 +339,179 @@
     </div>
   </div>
 
+  <!-- ADD Grupos / Permissões -->
+  <div class="modal fade text-dark" id="addGrupoPermissaoModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Grupos e Permissões de Usuários   <i class="fas fa-users-cog"></i></h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs nav-pills">
+            <br>
+            <li class="active">
+                <a class="nav-link" data-toggle="tab" href="#grupoUsuario">Grupo de Usuário <i class="fas fa-plus"></i></a>
+            </li>
+            <li>
+                <a class="nav-link" data-toggle="tab" href="#permissaoUsuario">Permissão Usuário <i class="fas fa-plus"></i></a>
+            </li>
+            <li>
+                <a class="nav-link" data-toggle="tab" href="#permissaoGrupoUsuario">Permissão Grupo Usuário <i class="fas fa-plus"></i></a>
+            </li>
+          </ul>
+          <br>
+          <div class="tab-content">
+            <div id="grupoUsuario" class="tab-pane fade in active">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome do Grupo</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="name">Menu do Grupo</label>
+                  <textarea type="text" class="form-control"  placeholder="Html do Menu do Usuário.."></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+            <div id="permissaoUsuario" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="name">Url</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+            <div id="permissaoGrupoUsuario" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="name">Grupo de Usuário</label>
+                  <select class="form-control" name="">
+                    <option value="grupo">Grupo 1</option>
+                    <option value="grupo">Grupo 2</option>
+                  </select>
+                </div>
+                <label for="permissao">Buscar Url da Permissão</label>
+                <div class="input-group md-form form-sm form-2 pl-0">
+                  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Buscar">
+                  <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                  </div>
+                </div> <br>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD Usuários -->
+  <div class="modal fade text-dark" id="addUsuarioModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Adicionar Usuários<i class="fas fa-users"></i></h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs nav-pills">
+            <br>
+            <li class="active">
+                <a class="nav-link" data-toggle="tab" href="#grupoUsuario">Professor<i class="fas fa-plus"></i></a>
+            </li>
+            <li>
+                <a class="nav-link" data-toggle="tab" href="#permissaoUsuario">Aluno <i class="fas fa-plus"></i></a>
+            </li>
+            <li>
+                <a class="nav-link" data-toggle="tab" href="#permissaoGrupoUsuario">Administrador <i class="fas fa-plus"></i></a>
+            </li>
+          </ul>
+          <br>
+          <div class="tab-content">
+            <div id="grupoUsuario" class="tab-pane fade in active">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome do Grupo</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="name">Menu do Grupo</label>
+                  <textarea type="text" class="form-control"  placeholder="Html do Menu do Usuário.."></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+            <div id="permissaoUsuario" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="name">Url</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+            <div id="permissaoGrupoUsuario" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="name">Grupo de Usuário</label>
+                  <select class="form-control" name="">
+                    <option value="grupo">Grupo 1</option>
+                    <option value="grupo">Grupo 2</option>
+                  </select>
+                </div>
+                <label for="permissao">Buscar Url da Permissão</label>
+                <div class="input-group md-form form-sm form-2 pl-0">
+                  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Buscar">
+                  <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                  </div>
+                </div> <br>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
