@@ -440,10 +440,10 @@
           <ul class="nav nav-tabs nav-pills">
             <br>
             <li class="active">
-                <a class="nav-link" data-toggle="tab" href="#grupoUsuario">Professor<i class="fas fa-plus"></i></a>
+                <a class="nav-link" data-toggle="tab" href="#addProfessor">Professor<i class="fas fa-plus"></i></a>
             </li>
             <li>
-                <a class="nav-link" data-toggle="tab" href="#permissaoUsuario">Aluno <i class="fas fa-plus"></i></a>
+                <a class="nav-link" data-toggle="tab" href="#addAluno">Aluno <i class="fas fa-plus"></i></a>
             </li>
             <li>
                 <a class="nav-link" data-toggle="tab" href="#permissaoGrupoUsuario">Administrador <i class="fas fa-plus"></i></a>
@@ -451,58 +451,98 @@
           </ul>
           <br>
           <div class="tab-content">
-            <div id="grupoUsuario" class="tab-pane fade in active">
+            <div id="addProfessor" class="tab-pane fade in active">
               <form>
                 <div class="form-group">
-                  <label for="name">Nome do Grupo</label>
+                  <label for="name">Nome Completo</label>
                   <input type="text" class="form-control">
                 </div>
+
                 <div class="form-group">
-                  <label for="name">Menu do Grupo</label>
-                  <textarea type="text" class="form-control"  placeholder="Html do Menu do Usuário.."></textarea>
-                </div>
-                <div class="form-group">
-                  <label>Status</label>
-                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
-                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
-                </div>
-              </form>
-            </div>
-            <div id="permissaoUsuario" class="tab-pane fade">
-              <form>
-                <div class="form-group">
-                  <label for="name">Url</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Status</label>
-                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
-                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
-                </div>
-              </form>
-            </div>
-            <div id="permissaoGrupoUsuario" class="tab-pane fade">
-              <form>
-                <div class="form-group">
-                  <label for="name">Grupo de Usuário</label>
-                  <select class="form-control" name="">
-                    <option value="grupo">Grupo 1</option>
-                    <option value="grupo">Grupo 2</option>
+                  <select class="form-control" name="Seleciona">
+                    <option value="">Sexo</option>
+                    <option value="">Masculino</option>
+                    <option value="">Feminino</option>
                   </select>
                 </div>
-                <label for="permissao">Buscar Url da Permissão</label>
-                <div class="input-group md-form form-sm form-2 pl-0">
-                  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Buscar">
-                  <div class="input-group-append">
-                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
-                  </div>
-                </div> <br>
                 <div class="form-group">
-                  <label>Status</label>
-                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
-                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                  <label for="message">CPF</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message">Siape</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="Seleciona">
+                    <option value="">Curso</option>
+                    <option value="">Licenciatura em Informática</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="confirmasenha">Confirma Senha</label>
+                  <input type="password" class="form-control">
                 </div>
               </form>
+            </div>
+            <div id="addAluno" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="nomeAluno">Nome Completo</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <select class="form-control" name="Seleciona">
+                    <option value="">Sexo</option>
+                    <option value="">Masculino</option>
+                    <option value="">Feminino</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">CPF</label>
+                  <input type="text" class="form-control" maxlength="11" pattern="[0-9]+$">
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone</label>
+                  <input type="text" maxlength="14" placeholder="XX X XXXX-XXXX" class="form-control"
+                    pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## # ####-####', this)">
+                </div>
+                <div class="form-group">
+                  <label for="matricula">Matricula</label>
+                  <input type="text" class="form-control" maxlength="13" pattern="[0-9]+$">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="Seleciona">
+                    <option value="">Curso</option>
+                    <option value="">Licenciatura em Informática</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="confirmasenha">Confirma Senha</label>
+                  <input type="password" class="form-control">
+                </div>
+              </form>
+
+            </div>
+            <div id="addAdministrador" class="tab-pane fade">
+
             </div>
           </div>
         </div>
