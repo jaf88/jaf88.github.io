@@ -34,10 +34,10 @@
             <a href="#pccs-head-section" class="nav-link btn">
               PCCS <i class="far fa-bookmark"></i></a>
           </li>
-          <li class="nav-item">
-            <a href="#cadastro-head-section" class="nav-link btn">
+          <!--<li class="nav-item">
+            <a href="#profile" class="nav-link btn">
               Cadastre-se <i class="fas fa-clipboard"></i></a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link btn" data-toggle="modal" data-target="#contactModal">
               Contato <i class="fas fa-comment-dots"></i></a>
@@ -58,42 +58,64 @@
           </div>
         </div>
         <div class="row d-flex py-1">
-          <!--<div class="divtext col-lg-8 col-md-8 col-sm-6 col-12">
-            <h4 class="text-justify">
-            Todos os cursos superiores do Instituto Federal do Piauí <br>
-            possuem dentro do Projeto Político Pedagógico do Curso, <br> uma
-            carga horária específica de atividades acadêmicas <br> complementares
-            para a formação dos seus discente.</h4>
-          </div>-->
+          <div class="col-lg-3 col-md-3 col-sm-3 col-0"></div>
+
+          <div class="cardEntrar col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="card text-dark">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+                <li class="nav-item">
+                 <a class="nav-link active" id="home-tab" data-toggle="tab"
+                    href="#home" role="tab" aria-controls="home" aria-selected="true">Entrar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Cadastre-se</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">Recuperar Senha</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+             <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-lg" placeholder="Senha">
+                    </div>
+                    <a href="dashboardadmin.html" class="btn btn-primary btn-block">Entrar</a>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <p class="lead"><h5> Faça o seu cadastro e começe a registrar e fazer o acompanhamento
+                    de suas atividades acadêmicas.</h5></p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ProfessorModal">
+                    Cadastro de Professor
+                  </a>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#AlunoModal">
+                    Cadastro de Aluno
+                  </a>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email">
+                    </div>
+                    <a href="dashboardadmin.html" class="btn btn-primary btn-block">Enviar email de recuperação</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           <div class="col-lg-3 col-md-3 col-sm-3 col-0">
 
           </div>
-          <div class="cardEntrar col-lg-6 col-md-6 col-sm-6 col-12">
-            <div class="card bg-success text-center card-form">
-              <div class="card-body">
-                <h3>Entrar no SRAA</h3>
-                <!--<p> Informe seu e-mail e senha</p>-->
-                <form>
-                  <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" placeholder="Senha">
-                  </div>
-                  <a href="dashboardadmin.html" class="btn btn-primary btn-block">Entrar</a>
-                  <!--<input type="submit" value="Entrar" class="btn btn-primary btn-block"> -->
-                  <br>
-                  <h4 class="d-flex">
-                    <a class="btn btn-warning" href="#cadastro-head-section">Cadastre-se</a>
-                    <a class="btn btn-danger"href="#">Recuperar Senha</a>
-                  </h4>
-                </form>
-              </div>
-            </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-0">
-
-            </div>
           </div>
 
         </div>
@@ -196,7 +218,7 @@
     </div>
   </section>
 
-  <!-- Cadastro head -->
+  <!-- Cadastro head
   <section id="cadastro-head-section" class="bg-success">
     <div class="container">
       <div class="row">
@@ -221,18 +243,30 @@
     </div>
   </section>
 
-  <!-- Cadastro SECTION
-  <section id="cadastro-section" class="bg-light text-muted py-5">
+  <!--Cadastro SECTION
+  <section id="cadastro-section" class="bg-light text-muted">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ProfessorModal">
-            Cadastro de Professor
-          </a>
-        </div>
+      <ul class="nav nav-tabs">
+        <li class="active"><a class="nav-link" data-toggle="tab" href="#cadastroProfessor">Cadastro Professor</a></li>
+        <li><a class="nav-link"data-toggle="tab" href="#cadastroAluno">Cadastro Aluno</a></li>
+      </ul>
+
+    <div class="tab-content">
+      <div id="cadastroProfessor" class="tab-pane fade in active"> <br>
+        <h3>Cadastro de Professores</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div id="cadastroAluno" class="tab-pane fade"> <br>
+        <h3>Cadastro de Alunos</h3>
       </div>
     </div>
-  </section>-->
+  </div>
+</section> -->
 
   <!-- Professor MODAL -->
   <div class="modal fade text-dark" id="ProfessorModal">
@@ -284,7 +318,6 @@
               <label for="confirmasenha">Confirma Senha</label>
               <input type="password" class="form-control">
             </div>
-
           </form>
         </div>
         <div class="modal-footer">
@@ -413,6 +446,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
    <script>
     // Get the current year for the copyright
