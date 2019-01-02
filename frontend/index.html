@@ -14,7 +14,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" id="entrar">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top" id="main-nav">
     <div class="container">
       <a href="index.html" class="navbar-brand"><i class="fas fa-graduation-cap"> SRAA </i></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -124,7 +124,7 @@
   </header>
 
   <!-- ATPA HEAD -->
-  <section id="atpa-head-section">
+  <section id="atpa-head-section" class="bg-success">
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
@@ -171,7 +171,7 @@
   </section>
 
   <!-- PCCS HEAD -->
-  <section id="pccs-head-section">
+  <section id="pccs-head-section" class="bg-success">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center py-5">
@@ -217,56 +217,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Cadastro head
-  <section id="cadastro-head-section" class="bg-success">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center py-4"> <br>
-          <h1 class="py-2">Cadastre-se</h1>
-          <p class="lead"><h5> Faça o seu cadastro e começe a registrar e fazer o acompanhamento
-            de suas atividades acadêmicas.</h5></p>
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ProfessorModal">
-                  Cadastro de Professor
-                </a>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#AlunoModal">
-                Cadastro de Aluno
-              </a>
-            </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--Cadastro SECTION
-  <section id="cadastro-section" class="bg-light text-muted">
-    <div class="container">
-      <ul class="nav nav-tabs">
-        <li class="active"><a class="nav-link" data-toggle="tab" href="#cadastroProfessor">Cadastro Professor</a></li>
-        <li><a class="nav-link"data-toggle="tab" href="#cadastroAluno">Cadastro Aluno</a></li>
-      </ul>
-
-    <div class="tab-content">
-      <div id="cadastroProfessor" class="tab-pane fade in active"> <br>
-        <h3>Cadastro de Professores</h3>
-        <form>
-          <div class="form-group">
-            <label for="name">Nome Completo</label>
-            <input type="text" class="form-control">
-          </div>
-        </form>
-      </div>
-      <div id="cadastroAluno" class="tab-pane fade"> <br>
-        <h3>Cadastro de Alunos</h3>
-      </div>
-    </div>
-  </div>
-</section> -->
 
   <!-- Professor MODAL -->
   <div class="modal fade text-dark" id="ProfessorModal">
@@ -392,21 +342,38 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer id="main-footer" class="bg-dark">
+  <footer id="main-footer" class="bg-info text-white ">
     <div class="container">
       <div class="row">
-        <div class="col text-center py-2">
-          SRAA - Instituto Federal do Piauí - Campus Teresina Zona Sul
-           - Avenida Pedro Freitas, 1020 - São Pedro. Copyright &copy;
-            <span id="year"></span>
-
-          <!--<button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-          -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <img src="logoifpi.png" align="left" width="194" alt="Logo Ifpi">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <p class="lead text-center">
+            SRAA - Instituto Federal do Piauí - Campus Teresina Zona Sul
+             - Avenida Pedro Freitas, 1020 - São Pedro. Copyright &copy;
+              <span id="year"></span>
+          </p>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- FOOTER
+  <footer id="main-footer" class="bg-white">
+    <div class="container">
+      <br><br>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+          <img src="logoifpi.png" align="left" width="194" alt="Logo Ifpi">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center text-dark">
+          Copyright &copy;
+        <span id="year"></span>
+        </div>
+      </div>
+    </div>
+  </footer> -->
 
   <!-- CONTACT MODAL -->
   <div class="modal fade text-dark" id="contactModal">

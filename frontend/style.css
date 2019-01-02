@@ -6,6 +6,7 @@ body {
 
 .navbar {
   border-bottom: #00d68f 7px solid;
+  /*border-bottom: #00d68f 7px solid;*/
   /*opacity: 0.8;*/
 }
 ul .nav-tabs{
@@ -18,7 +19,9 @@ ul .nav-tabs{
   background-attachment: fixed;
   min-height: 650px;
 }
+footer{
 
+}
 #entrar-section .dark-overlay {
   position: absolute;
   top: 0;
@@ -58,5 +61,5 @@ ul .nav-tabs{
 }
 
 #cadastro-section {
-  min-height: 400px;
+  /*min-height: 400px;*/
 }
