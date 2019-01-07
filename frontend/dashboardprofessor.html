@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title> SRAA - IFPI CTZS </title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-graduation-cap"> SRAA</i></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <!--<li class="nav-item px-2">
+            <a href="index.html" class="nav-link active">Administração</a>
+          </li> -->
+          <li class="nav-item px-2">
+            <a href="#" class="nav-link">Entenda ATPA/PCCS</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Bem Vindo Professor
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">
+                <i class="fas fa-user-circle"></i> Seus Dados
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="main-header" class="py-2 bg-info text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+          <h3>
+            <i class="fas fa-cog"></i> Seu Gerenciamento de Atividades Complementares</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ACTIONS -->
+  <section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-12">
+          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addAtividadeComplementaresModal">
+            <i class="fas fa-cog"></i> Gerenciamento <br>de Perfil
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <h3 class="text-dark">Ativdades para analise</h3>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card text-center bg-primary text-white mb-3">
+          <div class="card-body">
+            <strong>ATPA</strong>
+            <h4 class="display-4">
+              <i class="fas fa-graduation-cap"></i> 20
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm">
+              Gerencie <i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-3 col-sm-12 col-12">
+        <div class="card text-center bg-success text-white mb-3">
+          <div class="card-body">
+            <strong>PCCS</strong>
+            <h4 class="display-4">
+              <i class="fas fa-graduation-cap"></i> 4
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm">
+              Gerencie <i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer id="main-footer" class="bg-white text-dark">
+  <div class="container">
+    <div class="row">
+      <hr class="bg-dark">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <br>
+        <img src="logoifpi.png" align="left" width="194" alt="Logo Ifpi">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <p class="lead text-center"> <br>
+          <strong>SRAA - IFPI- Campus Teresina Zona Sul
+           - Avenida Pedro Freitas, 1020 - São Pedro. Copyright &copy; <span id="year"></span></strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- MODALS -->
+  <!-- ADD ATIVIDADES COMPLEMENTARES MODAL -->
+  <div class="modal fade text-dark" id="addAtividadeComplementaresModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title"> Atividades complementares <i class="fas fa-pencil-alt"></i></h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs nav-pills">
+            <br>
+            <li>
+                <a class="nav-link" data-toggle="tab" href="#addAtividades">Adicionar Atividades <i class="fas fa-plus"></i></a>
+            </li>
+          </ul>
+          <br>
+          <div class="tab-content">
+            <div id="addAtividades" class="tab-pane fade">
+              <form>
+                <div class="form-group">
+                  <label for="nomecategoria">Nome da Atividade</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="sigla">Sigla da Atividade</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="sigla">Quantidade Máxima de horas</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="form-group">Categoria de Atividade</label>
+                  <select class="form-control" name="">
+                    <option value="">Teste1</option>
+                    <option value="">Teste2</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Status</label>
+                  <label><input name="curso.status" id="optionsRadios1" value="1" ${curso.status == 1 || curso==null ? 'checked' : ''} type="radio"> Ativo</label>
+                  <label><input name="curso.status" id="optionsRadios2" value="0" ${curso.status == 0 ? 'checked' : ''} type="radio"> Inativo</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+  </script>
+</body>
+
+</html>
